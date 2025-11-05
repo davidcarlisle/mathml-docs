@@ -23,6 +23,12 @@ hr.sp {height:.1em;max-width:6em;padding:0;margin:0}
 span.n {font-size:80%;font-style: monospace}
 </style>
 
+<style id="langcss">
+{% for language in site.data.languages offset:1-%}
+  {%- unless forloop.first %},{% endunless%} *.{{language.language-code}}
+{%- endfor -%}
+ {display:none}
+</style>
 
 
 
@@ -31,6 +37,26 @@ span.n {font-size:80%;font-style: monospace}
 
 ----
 
+
+<details>
+<summary>Available Template Languages</summary>
+<p id="langchoice" class="langs">
+<!-- Loop over languages in _data/languages.yml -->
+{%- for language in site.data.languages -%}
+{% assign lang = language.language-code %}
+<span class="cb">
+ <input
+	onchange="updatelang(this)"
+	type="checkbox"
+	{% if lang == "en" or lang == "Xfr" %} checked {% endif %}
+      id="cb-{{lang}}"
+      name="language"
+      value="{{lang}}" />
+	  <label for="cb-{{lang}}">{{lang}}: {{language.label-regional}} 
+            {%- if lang != "en" %} ({{language.label-english}}){% endif %}</label></span>
+{% endfor %}
+</p>
+</details>
 
 
 <table style="width:100%">
@@ -50,21 +76,21 @@ span.n {font-size:80%;font-style: monospace}
 {%- for f in u offset:2  -%}
 {%- unless forloop.first or f.n %}<hr class="sp"/>{% endunless%}
 
-{%- if f.choose -%}
-{%- for c in f.choose  -%}
-{%- unless forloop.first %}<br/>{% endunless%}
-{{c | replace: eobj, " " | replace: bobj, '<b>' | replace: '"=>"', '</b>: '  }}
-{%- endfor -%}
-{%- endif -%}
 
 {%- if f.map -%}
 <b>map:</b> {{f.map}}
 {%- endif -%}
 
-{%- if f.t -%}
-{{f.t}}
+{%- if f.en -%}
+{%-   if f.en.choose -%}
+{%-     for c in f.en.choose  -%}
+{%-       unless forloop.first %}<br/>{% endunless%}
+          {{c | replace: eobj, " " | replace: bobj, '<b>' | replace: '"=>"', '</b>: '  }}
+{%-     endfor -%}
+{%-   else -%
+        {{f.en}}
+{%-   endif -%}
 {%- endif -%}
-
 
 {%- if f.n -%}
 <span class="n">&#160;&langle;{{f.n}}&rangle;</span>
