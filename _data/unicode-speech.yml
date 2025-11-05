@@ -1589,20 +1589,10 @@
     char: Å
     u: "212B"
     en: angstroms
-# Handled with full alphabet
-# -
-#     char: ℯ
-#     u: "212F"
-#     en: script e
 -
     char: Ⅎ
     u: "2132"
     en: turned F
-# Handled with full alphabet
-# -
-#     char: ℴ
-#     u: "2134"
-#     en: script o
 -
     char: ℵ
     u: "2135"
@@ -2598,7 +2588,7 @@
     en:
       choose:
         not-terse: is to
-	terse: to
+        terse: to
 -
     char: ∷
     u: "2237"
@@ -2764,8 +2754,8 @@
     u: "2253"
     en:
       choose:
-        not-terse: is the
-    en: image of or approximately equal to
+        not-terse: is the image of or approximately equal to
+        terse: the image of or approximately equal to
 -
     char: ≔
     u: "2254"
@@ -3022,15 +3012,15 @@
     u: "2282"
     en:
       choose:
-        not-terse: is a
-    en: subset of
+        not-terse: is a subset of
+        terse: subset of
 -
     char: ⊃
     u: "2283"
     en:
       choose:
-        not-terse: is a
-    en: superset of
+        not-terse: is a superset of
+        terse: a superset of
 -
     char: ⊄
     u: "2284"
@@ -3050,15 +3040,15 @@
     u: "2286"
     en:
       choose:
-        not-terse: is a
-    en: subset of or equal to
+        not-terse: is a subset of or equal to
+        terse: subset of or equal to
 -
     char: ⊇
     u: "2287"
     en:
       choose:
-        not-terse: is a
-    en: superset of or equal to
+        not-terse: is a superset of or equal to
+        terse: superset of or equal to
 -
     char: ⊈
     u: "2288"
