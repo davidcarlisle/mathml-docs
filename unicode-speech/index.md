@@ -82,13 +82,14 @@ span.n {font-size:80%;font-style: monospace}
 {%- endif -%}
 
 {%- if f.en -%}
-{%-   if f.en.choose -%}
-{%-     for c in f.en.choose  -%}
+{%- assign thisl = f.en %}
+{%-   if thisl.choose -%}
+{%-     for c in l.en.choose  -%}
 {%-       unless forloop.first %}<br/>{% endunless%}
           {{c | replace: eobj, " " | replace: bobj, '<b>' | replace: '"=>"', '</b>: '  }}
 {%-     endfor -%}
 {%-   else -%}
-        {{f.en}}
+        {{thisl}}
 {%-   endif -%}
 {%- endif -%}
 
