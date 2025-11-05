@@ -998,7 +998,7 @@
     - char: •
     - u: "2022"
     - en:
-       - choose:
+        choose:
           - bullet-dot: dot
           - default: bullet
 -
