@@ -59,7 +59,7 @@ span.n {font-size:80%;font-style: monospace}
 </details>
 
 
-<table style="width:100%">
+<table style="width:100%;overflow:visible;">
 <thead>
 <tr>
 <th>Unicode</th><th>Character</th>
