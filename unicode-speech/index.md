@@ -86,7 +86,7 @@ span.n {font-size:80%;font-style: monospace}
 {%- endif -%}
 
 {%- if f.en -%}
-{{language}}
+{{language.language-code}}
 {%- assign thisl = f.en %}
 {%-   if thisl.choose -%}
 {%-     for c in thisl.choose  -%}
@@ -112,3 +112,18 @@ span.n {font-size:80%;font-style: monospace}
 	
 ----
 
+
+
+<script>
+var LangCss = document.getElementById('langcss');
+var langcb=document.getElementById('langchoice').getElementsByTagName('input');
+function updatelang (e) {
+  LangCss.textContent='';
+  for (var i=0, iLen=langcb.length; i<iLen; i++) {
+    opt = langcb[i];
+    if (!(opt.checked)) {
+      LangCss.textContent= LangCss.textContent + "*." + opt.value + " {display:none}";
+    }
+  }
+}
+</script>
