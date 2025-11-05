@@ -79,12 +79,11 @@ span.n {font-size:80%;font-style: monospace}
 <td class="{{language.language-code}}">
 
 {%- if u[language.language-code] -%}
-{{language.language-code}}
 {%- assign thisl = u[language.language-code] -%}
 {%-   if thisl.choose -%}
 {%-     for c in thisl.choose  -%}
 {%-       unless forloop.first %}<br/>{% endunless%}
-          {{c | replace: '["', '<b>' | replace: '","', '</b>: ' |replace: ']', '' }}
+          {{c | replace: '["', '<b>' | replace: '", "', '</b>: ' |replace: '"]', '' }}
 {%-     endfor -%}
 {%-   else -%}
         no{{thisl}}
