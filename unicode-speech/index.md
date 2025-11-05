@@ -96,12 +96,12 @@ span.n {font-size:80%;font-style: monospace}
 
 {%- if u.map -%}
 <hr class="sp"/>
-<b>map:</b> {{f.map}}
+<b>map:</b> {{u.map}}
 {%- endif -%}
 
 {%- if u.n -%}
 <hr class="sp"/>
-<span class="n">&#160;&langle;{{f.n}}&rangle;</span>
+<span class="n">&#160;&langle;{{u.n}}&rangle;</span>
 {%- endif -%}
 
 </td>
