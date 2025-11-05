@@ -57,7 +57,7 @@
     char: ¯
     u: "00AF"
     en:
-        choose:
+      choose:
         modified-variable: bar
         default: line
 -
@@ -84,7 +84,7 @@
     char: ·
     u: "00B7"
     en:
-        choose:
+      choose:
         dot-times: times
         default: dot
 -
@@ -115,7 +115,7 @@
     char: ×
     u: "00D7"
     en:
-        choose:
+      choose:
         times-by: by
         times-cross: cross
         default: times
@@ -716,7 +716,7 @@
     char: ΪΫϏ
     u: "03AA 03AB 03CF"
     en:
-        choose:
+      choose:
         capital-beep: beep % with dialytika
         capital-prefix: cap % with dialytika
     map: ('ΪΫϏ', 'ιυϗ')
@@ -796,7 +796,7 @@
     char: А-Я
     u: "0410-042F"
     en:
-        choose:
+      choose:
         capital-beep: beep %
         capital-prefix: cap %
     map: ('АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ', 'абвгдежзийклмнопрстуфхцчшщъыьэюя')
@@ -1000,14 +1000,14 @@
     char: •
     u: "2022"
     en:
-        choose:
-          bullet-dot: dot
-          default: bullet
+      choose:
+        bullet-dot: dot
+        default: bullet
 -
     char: …
     u: "2026"
     en:
-        choose:
+      choose:
         ellipsis-so-on-end: and so on up to
         ellipsis-so-on: and so on
         default: dot dot dot
@@ -1907,14 +1907,14 @@
     char: ↗
     u: "2197"
     en:
-        choose:
+      choose:
         limit: approaches from below
         default: north east arrow
 -
     char: ↘
     u: "2198"
     en:
-        choose:
+      choose:
         limit: approaches from above
         default: south east arrow
 -
@@ -2337,14 +2337,14 @@
     char: ∁
     u: "2201"
     en:
-        choose:
-        not-terse: the
-    en: complement of
+      choose:
+        not-terse: the complement of
+        terse: complement of
 -
     char: ∂
     u: "2202"
     en:
-        choose:
+      choose:
         terse: partial
         default: partial derivative
 -
@@ -2363,21 +2363,21 @@
     char: ∆
     u: "2206"
     en:
-        choose:
-        not-terse: the
-    en: laplacian of
+      choose:
+        not-terse: the laplacian of
+        terse: laplacian of
 -
     char: ∇
     u: "2207"
     en:
-        choose:
-        not-terse: the
-    en: gradient of
+      choose:
+        not-terse: the gradient of
+        terse: gradient of
 -
     char: ∈
     u: "2208"
     en:
-        choose:
+      choose:
         element-member-verbose: is a member of
         element-member: member of
         element-belonging: belonging to
@@ -2390,7 +2390,7 @@
     char: ∉
     u: "2209"
     en:
-        choose:
+      choose:
         element-member-verbose: is not a member of
         element-member: not member of
         element-belonging: not belonging to
@@ -2403,7 +2403,7 @@
     char: ∊
     u: "220A"
     en:
-        choose:
+      choose:
         element-member-verbose: is a member of
         element-member: member of
         element-belonging: belonging to
@@ -2472,7 +2472,7 @@
     char: ∙
     u: "2219"
     en:
-        choose:
+      choose:
         bullet-dot: dot
         bullet-times: times
         default: bullet
@@ -2480,30 +2480,30 @@
     char: √
     u: "221A"
     en:
-        choose:
-        not-terse: the
-    en: square root of
+      choose:
+        not-terse: the square root of
+        terse: square root of
 -
     char: ∛
     u: "221B"
     en:
-        choose:
-        not-terse: the
-    en: cube root of
+      choose:
+        not-terse: the cube root of
+        terse: cube root of
 -
     char: ∜
     u: "221C"
     en:
-        choose:
-        not-terse: the
-    en: fourth root of
+      choose:
+        not-terse: the fourth root of
+        terse: fourth root of
 -
     char: ∝
     u: "221D"
     en:
-        choose:
-        not-terse: is
-    en: proportional to
+      choose:
+        not-terse: is proportional to
+        terse: proportional to
 -
     char: ∞
     u: "221E"
@@ -2596,9 +2596,9 @@
     char: ∶
     u: "2236"
     en:
-        choose:
-        not-terse: is
-    en: to
+      choose:
+        not-terse: is to
+	terse: to
 -
     char: ∷
     u: "2237"
@@ -2616,15 +2616,15 @@
     u: "223A"
     en:
         choose:
-        not-terse: is
-    en: geometrically proportional to
+        not-terse: is geometrically proportional to
+        terse: geometrically proportional to
 -
     char: ∻
     u: "223B"
     en:
-        choose:
-        not-terse: is
-    en: homothetic to
+      choose:
+        not-terse: is homothetic to
+        terse: homothetic to
 -
     char: ∼
     u: "223C"
@@ -2637,9 +2637,9 @@
     char: ∾
     u: "223E"
     en:
-        choose:
-        not-terse: is
-    en: most positive
+      choose:
+        not-terse: is most positive
+        terse: most positive
 -
     char: ∿
     u: "223F"
@@ -2660,58 +2660,58 @@
     char: ≃
     u: "2243"
     en:
-        choose:
-        not-terse: is
-    en: asymptotically equal to
+      choose:
+        not-terse: is asymptotically equal to
+        terse: asymptotically equal to
 -
     char: ≄
     u: "2244"
     en:
-        choose:
-        not-terse: is
-    en: not asymptotically equal to
+      choose:
+        not-terse: is not asymptotically equal to
+        terse: not asymptotically equal to
 -
     char: ≅
     u: "2245"
     en:
-        choose:
-        not-terse: is
-    en: approximately equal to
+      choose:
+        not-terse: is approximately equal to
+        terse: approximately equal to
 -
     char: ≆
     u: "2246"
     en:
-        choose:
-        not-terse: is
-    en: approximately but not actually equal to
+      choose:
+        not-terse: is approximately but not actually equal to
+        terse: approximately but not actually equal to
 -
     char: ≇
     u: "2247"
     en:
-        choose:
-        not-terse: is
-    en: neither approximately nor actually equal to
+      choose:
+        not-terse: is neither approximately nor actually equal to
+        terse: neither approximately nor actually equal to
 -
     char: ≈
     u: "2248"
     en:
-        choose:
-        not-terse: is
-    en: almost equal to
+      choose:
+        not-terse: is almost equal to
+        terse: almost equal to
 -
     char: ≉
     u: "2249"
     en:
-        choose:
-        not-terse: is
-    en: not almost equal to
+      choose:
+        not-terse: is not almost equal to
+        terse: not almost equal to
 -
     char: ≊
     u: "224A"
     en:
-        choose:
-        not-terse: is
-    en: almost equal or equal to
+      choose:
+        not-terse: is almost equal or equal to
+        terse: almost equal or equal to
 -
     char: ≋
     u: "224B"
@@ -2724,23 +2724,23 @@
     char: ≍
     u: "224D"
     en:
-        choose:
-        not-terse: is
-    en: equivalent to
+      choose:
+        not-terse: is equivalent to
+        terse: equivalent to
 -
     char: ≎
     u: "224E"
     en:
-        choose:
-        not-terse: is
-    en: geometrically equivalent to
+      choose:
+        not-terse: is geometrically equivalent to
+        terse: geometrically equivalent to
 -
     char: ≏
     u: "224F"
     en:
-        choose:
-        not-terse: the
-    en: difference between
+      choose:
+        not-terse: the difference between
+        terse: difference between
 -
     char: ≐
     u: "2250"
@@ -2749,21 +2749,21 @@
     char: ≑
     u: "2251"
     en:
-        choose:
-        not-terse: is
-    en: geometrically equal to
+      choose:
+        not-terse: is geometrically equal to
+        terse: geometrically equal to
 -
     char: ≒
     u: "2252"
     en:
-        choose:
-        not-terse: is
-    en: approximately equal to or the image of
+      choose:
+        not-terse: is approximately equal to or the image of
+        terse: approximately equal to or the image of
 -
     char: ≓
     u: "2253"
     en:
-        choose:
+      choose:
         not-terse: is the
     en: image of or approximately equal to
 -
@@ -2782,9 +2782,9 @@
     char: ≗
     u: "2257"
     en:
-        choose:
-        not-terse: is
-    en: approximately equal to
+      choose:
+        not-terse: is approximately equal to
+        terse: approximately equal to
 -
     char: ≘
     u: "2258"
@@ -2797,9 +2797,9 @@
     char: ≚
     u: "225A"
     en:
-        choose:
-        not-terse: is
-    en: equiangular to
+      choose:
+        not-terse: is equiangular to
+        terse: equiangular to
 -
     char: ≛
     u: "225B"
@@ -2816,9 +2816,9 @@
     char: ≞
     u: "225E"
     en:
-        choose:
-        not-terse: is
-    en: measured by
+      choose:
+        not-terse: is measured by
+        terse: measured by
 -
     char: ≟
     u: "225F"
@@ -2827,30 +2827,30 @@
     char: ≠
     u: "2260"
     en:
-        choose:
-        not-terse: is
-    en: not equal to
+      choose:
+        not-terse: is not equal to
+        terse: not equal to
 -
     char: ≡
     u: "2261"
     en:
-        choose:
-        not-terse: is
-    en: identical to
+      choose:
+        not-terse: is identical to
+        terse: identical to
 -
     char: ≢
     u: "2262"
     en:
-        choose:
-        not-terse: is
-    en: not identical to
+      choose:
+        not-terse: is not identical to
+        terse: not identical to
 -
     char: ≣
     u: "2263"
     en:
-        choose:
-        not-terse: is
-    en: strictly equivalent to
+      choose:
+        not-terse: is strictly equivalent to
+        terse: strictly equivalent to
 -
     char: ≦
     u: "2266"
@@ -2863,128 +2863,128 @@
     char: ≨
     u: "2268"
     en:
-        choose:
-        not-terse: is
-    en: less than but not equal to
+      choose:
+        not-terse: is less than but not equal to
+        terse: less than but not equal to
 -
     char: ≩
     u: "2269"
     en:
-        choose:
-        not-terse: is
-    en: greater than but not equal to
+      choose:
+        not-terse: is greater than but not equal to
+        terse: greater than but not equal to
 -
     char: ≪
     u: "226A"
     en:
-        choose:
-        not-terse: is
-    en: much less than
+      choose:
+        not-terse: is much less than
+        terse: much less than
 -
     char: ≫
     u: "226B"
     en:
-        choose:
-        not-terse: is
-    en: much greater than
+      choose:
+        not-terse: is much greater than
+        terse: much greater than
 -
     char: ≬
     u: "226C"
     en:
-        choose:
-        not-terse: is
-    en: between
+      choose:
+        not-terse: is between
+        terse: between
 -
     char: ≭
     u: "226D"
     en:
-        choose:
-        not-terse: is
-    en: not equivalent to
+      choose:
+        not-terse: is not equivalent to
+        terse: not equivalent to
 -
     char: ≮
     u: "226E"
     en:
-        choose:
-        not-terse: is
-    en: not less than
+      choose:
+        not-terse: is not less than
+        terse: not less than
 -
     char: ≯
     u: "226F"
     en:
-        choose:
-        not-terse: is
-    en: not greater than
+      choose:
+        not-terse: is not greater than
+        terse: not greater than
 -
     char: ≰
     u: "2270"
     en:
-        choose:
-        not-terse: is
-    en: neither less than nor equal to
+      choose:
+        not-terse: is neither less than nor equal to
+        terse: neither less than nor equal to
 -
     char: ≱
     u: "2271"
     en:
-        choose:
-        not-terse: is
-    en: neither greater than nor equal to
+      choose:
+        not-terse: is neither greater than nor equal to
+        terse: neither greater than nor equal to
 -
     char: ≲
     u: "2272"
     en:
-        choose:
-        not-terse: is
-    en: less than or equivalent to
+      choose:
+        not-terse: is less than or equivalent to
+        terse: less than or equivalent to
 -
     char: ≳
     u: "2273"
     en:
-        choose:
-        not-terse: is
-    en: greater than or equivalent to
+      choose:
+        not-terse: is greater than or equivalent to
+        terse: greater than or equivalent to
 -
     char: ≴
     u: "2274"
     en:
-        choose:
-        not-terse: is
-    en: neither less than nor equivalent to
+      choose:
+        not-terse: is neither less than nor equivalent to
+        terse: neither less than nor equivalent to
 -
     char: ≵
     u: "2275"
     en:
-        choose:
-        not-terse: is
-    en: neither greater than nor equivalent to
+      choose:
+        not-terse: is neither greater than nor equivalent to
+        terse: neither greater than nor equivalent to
 -
     char: ≶
     u: "2276"
     en:
-        choose:
-        not-terse: is
-    en: less than or greater than
+      choose:
+        not-terse: is less than or greater than
+        terse: less than or greater than
 -
     char: ≷
     u: "2277"
     en:
-        choose:
-        not-terse: is
-    en: greater than or less than
+      choose:
+        not-terse: is greater than or less than
+        terse: greater than or less than
 -
     char: ≸
     u: "2278"
     en:
-        choose:
-        not-terse: is
-    en: neither less than nor greater than
+      choose:
+        not-terse: is neither less than nor greater than
+        terse: neither less than nor greater than
 -
     char: ≹
     u: "2279"
     en:
-        choose:
-        not-terse: is
-    en: neither greater than nor less than
+      choose:
+        not-terse: is neither greater than nor less than
+        terse: neither greater than nor less than
 -
     char: ≺
     u: "227A"
@@ -3021,58 +3021,58 @@
     char: ⊂
     u: "2282"
     en:
-        choose:
+      choose:
         not-terse: is a
     en: subset of
 -
     char: ⊃
     u: "2283"
     en:
-        choose:
+      choose:
         not-terse: is a
     en: superset of
 -
     char: ⊄
     u: "2284"
     en:
-        choose:
-        not-terse: is
-    en: not a subset of
+      choose:
+        not-terse: is not a subset of
+        terse: not a subset of
 -
     char: ⊅
     u: "2285"
     en:
-        choose:
-        not-terse: is
-    en: not a superset of
+      choose:
+        not-terse: is not a superset of
+        terse: not a superset of
 -
     char: ⊆
     u: "2286"
     en:
-        choose:
+      choose:
         not-terse: is a
     en: subset of or equal to
 -
     char: ⊇
     u: "2287"
     en:
-        choose:
+      choose:
         not-terse: is a
     en: superset of or equal to
 -
     char: ⊈
     u: "2288"
     en:
-        choose:
-        not-terse: is
-    en: neither a subset of nor equal to
+      choose:
+        not-terse: is neither a subset of nor equal to
+        terse: neither a subset of nor equal to
 -
     char: ⊉
     u: "2289"
     en:
-        choose:
-        not-terse: is
-    en: neither a superset of nor equal to
+      choose:
+        not-terse: is neither a superset of nor equal to
+        terse: neither a superset of nor equal to
 -
     char: ⊊
     u: "228A"
@@ -3185,9 +3185,9 @@
     char: ⊥
     u: "22A5"
     en:
-        choose:
-        not-terse: is
-    en: bottom
+      choose:
+        not-terse: is bottom
+        terse: bottom
 -
     char: ⊦
     u: "22A6"
@@ -3200,9 +3200,9 @@
     char: ⊨
     u: "22A8"
     en:
-        choose:
-        not-terse: is
-    en: "true"
+      choose:
+        not-terse: is "true"
+        terse: "true"
 -
     char: ⊩
     u: "22A9"
@@ -3223,9 +3223,9 @@
     char: ⊭
     u: "22AD"
     en:
-        choose:
-        not-terse: is
-    en: not true
+      choose:
+        not-terse: is not true
+        terse: not true
 -
     char: ⊮
     u: "22AE"
@@ -3246,9 +3246,9 @@
     char: ⊲
     u: "22B2"
     en:
-        choose:
-        not-terse: is
-    en: a normal subgroup of
+      choose:
+        not-terse: is a normal subgroup of
+        terse: a normal subgroup of
 -
     char: ⊳
     u: "22B3"
@@ -3257,9 +3257,9 @@
     char: ⊴
     u: "22B4"
     en:
-        choose:
-        not-terse: is
-    en: a normal subgroup of or equal to
+      choose:
+        not-terse: is a normal subgroup of or equal to
+        terse: a normal subgroup of or equal to
 -
     char: ⊵
     u: "22B5"
@@ -3268,16 +3268,16 @@
     char: ⊶
     u: "22B6"
     en:
-        choose:
-        not-terse: is
-    en: the original of
+      choose:
+        not-terse: is the original of
+        terse: the original of
 -
     char: ⊷
     u: "22B7"
     en:
-        choose:
-        not-terse: is
-    en: an image of
+      choose:
+        not-terse: is an image of
+        terse: an image of
 -
     char: ⊸
     u: "22B8"
@@ -3334,7 +3334,7 @@
     char: ⋅
     u: "22C5"
     en:
-        choose:
+      choose:
         bullet-dot: dot
         bullet-times: times
         default: bullet
@@ -3354,30 +3354,30 @@
     char: ⋉
     u: "22C9"
     en:
-        choose:
-        not-terse: is
-    en: the left normal factor semidirect product of
+      choose:
+        not-terse: is the left normal factor semidirect product of
+        terse: the left normal factor semidirect product of
 -
     char: ⋊
     u: "22CA"
     en:
-        choose:
-        not-terse: is
-    en: the right normal factor semidirect product of
+      choose:
+        not-terse: is the right normal factor semidirect product of
+        terse: the right normal factor semidirect product of
 -
     char: ⋋
     u: "22CB"
     en:
-        choose:
-        not-terse: is
-    en: the left semidirect product of
+      choose:
+        not-terse: is the left semidirect product of
+        terse: the left semidirect product of
 -
     char: ⋌
     u: "22CC"
     en:
-        choose:
-        not-terse: is
-    en: the right semidirect product of
+      choose:
+        not-terse: is the right semidirect product of
+        terse: the right semidirect product of
 -
     char: ⋍
     u: "22CD"
@@ -3394,44 +3394,44 @@
     char: ⋐
     u: "22D0"
     en:
-        choose:
-        not-terse: is
-    en: a double subset of
+      choose:
+        not-terse: is a double subset of
+        terse: a double subset of
 -
     char: ⋑
     u: "22D1"
     en:
-        choose:
-        not-terse: is
-    en: a double superset of
+      choose:
+        not-terse: is a double superset of
+        terse: a double superset of
 -
     char: ⋒
     u: "22D2"
     en:
-        choose:
-        not-terse: the
-    en: double intersection of
+      choose:
+        not-terse: the double intersection of
+        terse: double intersection of
 -
     char: ⋓
     u: "22D3"
     en:
-        choose:
-        not-terse: the
-    en: double union of
+      choose:
+        not-terse: the double union of
+        terse: double union of
 -
     char: ⋔
     u: "22D4"
     en:
-        choose:
-        not-terse: the
-    en: proper intersection of
+      choose:
+        not-terse: the proper intersection of
+        terse: proper intersection of
 -
     char: ⋕
     u: "22D5"
     en:
-        choose:
-        not-terse: is
-    en: equal to and parallel to
+      choose:
+        not-terse: is equal to and parallel to
+        terse: equal to and parallel to
 -
     char: ⋖
     u: "22D6"
@@ -3444,58 +3444,58 @@
     char: ⋘
     u: "22D8"
     en:
-        choose:
-        not-terse: is
-    en: very much less than
+      choose:
+        not-terse: is very much less than
+        terse: very much less than
 -
     char: ⋙
     u: "22D9"
     en:
-        choose:
-        not-terse: is
-    en: very much greater than
+      choose:
+        not-terse: is very much greater than
+        terse: very much greater than
 -
     char: ⋚
     u: "22DA"
     en:
-        choose:
-        not-terse: is
-    en: less than equal to or greater than
+      choose:
+        not-terse: is less than equal to or greater than
+        terse: less than equal to or greater than
 -
     char: ⋛
     u: "22DB"
     en:
-        choose:
-        not-terse: is
-    en: greater than equal to or less than
+      choose:
+        not-terse: is greater than equal to or less than
+        terse: greater than equal to or less than
 -
     char: ⋜
     u: "22DC"
     en:
-        choose:
-        not-terse: is
-    en: equal to or less than
+      choose:
+        not-terse: is equal to or less than
+        terse: equal to or less than
 -
     char: ⋝
     u: "22DD"
     en:
-        choose:
-        not-terse: is
-    en: equal to or greater than
+      choose:
+        not-terse: is equal to or greater than
+        terse: equal to or greater than
 -
     char: ⋞
     u: "22DE"
     en:
-        choose:
-        not-terse: is
-    en: equal to or precedes
+      choose:
+        not-terse: is equal to or precedes
+        terse: equal to or precedes
 -
     char: ⋟
     u: "22DF"
     en:
-        choose:
-        not-terse: is
-    en: equal to or succeeds
+      choose:
+        not-terse: is equal to or succeeds
+        terse: equal to or succeeds
 -
     char: ⋠
     u: "22E0"
@@ -3524,16 +3524,16 @@
     char: ⋦
     u: "22E6"
     en:
-        choose:
-        not-terse: is
-    en: less than but not equivalent to
+      choose:
+        not-terse: is less than but not equivalent to
+        terse: less than but not equivalent to
 -
     char: ⋧
     u: "22E7"
     en:
-        choose:
-        not-terse: is
-    en: greater than but not equivalent to
+      choose:
+        not-terse: is greater than but not equivalent to
+        terse: greater than but not equivalent to
 -
     char: ⋨
     u: "22E8"
@@ -3546,9 +3546,9 @@
     char: ⋪
     u: "22EA"
     en:
-        choose:
-        not-terse: is
-    en: not a normal subgroup of
+      choose:
+        not-terse: is not a normal subgroup of
+        terse: not a normal subgroup of
 -
     char: ⋫
     u: "22EB"
@@ -3557,9 +3557,9 @@
     char: ⋬
     u: "22EC"
     en:
-        choose:
-        not-terse: is
-    en: not a normal subgroup of nor is equal to
+      choose:
+        not-terse: is not a normal subgroup of nor is equal to
+        terse: not a normal subgroup of nor is equal to
 -
     char: ⋭
     u: "22ED"
@@ -5088,23 +5088,23 @@
     char: ⟂
     u: "27C2"
     en:
-        choose:
-        not-terse: is
-    en: perpendicular to
+      choose:
+        not-terse: is perpendicular to
+        terse: perpendicular to
 -
     char: ⟃
     u: "27C3"
     en:
-        choose:
-        not-terse: is
-    en: an open subset of
+      choose:
+        not-terse: is an open subset of
+        terse: an open subset of
 -
     char: ⟄
     u: "27C4"
     en:
-        choose:
-        not-terse: is
-    en: an open superset of
+      choose:
+        not-terse: is an open superset of
+        terse: an open superset of
 -
     char: ⟅
     u: "27C5"
@@ -8113,7 +8113,7 @@
     char: ｜
     u: "FF5C"
     en:
-        choose:
+      choose:
         vline-suchthat: such that
         vline-given: given
         vline-divides: divides
@@ -8214,7 +8214,7 @@
     char: 𝔸-𝕐
     u: "1D538-1D539 2102 1D53B-1D53E 210D 1D540-1D544 2115 1D546 2119-211A 211D 1D54A-1D550 2124"
     en:
-        choose:
+      choose:
         terse: "%"
         not-terse: "double struck %"
     map: ('𝔸𝔹ℂ𝔻𝔼𝔽𝔾ℍ𝕀𝕁𝕂𝕃𝕄ℕ𝕆ℙℚℝ𝕊𝕋𝕌𝕍𝕎𝕏𝕐ℤ', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
@@ -8222,7 +8222,7 @@
     char: 𝕒-𝕫
     u: "1D552-1D56B"
     en:
-        choose:
+      choose:
         terse: "%"
         not-terse: "double struck %"
     map: ('𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫', 'abcdefghijklmnopqrstuvwxyz')
@@ -8398,7 +8398,7 @@
     char: 𝟘-𝟡
     u: "1D7D8-1D7E1"
     en:
-        choose:
+      choose:
         terse: "%"
         not-terse: "double struck %"
     map: ('𝟘𝟙𝟚𝟛𝟜𝟝𝟞𝟟𝟠𝟡', '0123456789')
