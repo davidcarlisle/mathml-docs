@@ -3,8 +3,8 @@
     - char: +
     - u: "002B"
     - en: plus
-    - es: esplus
-    - de: deplus
+    - es: es-plus
+    - de: de-plus
 -
     - char: ¡
     - u: "00A1"

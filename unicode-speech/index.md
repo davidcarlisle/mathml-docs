@@ -85,9 +85,9 @@ span.n {font-size:80%;font-style: monospace}
 <b>map:</b> {{f.map}}
 {%- endif -%}
 
-{%- if f.en -%}
+{%- if f[language.language-code] -%}
 {{language.language-code}}
-{%- assign thisl = f.en %}
+{%- assign thisl = f[language.language-code] %}
 {%-   if thisl.choose -%}
 {%-     for c in thisl.choose  -%}
 {%-       unless forloop.first %}<br/>{% endunless%}
@@ -96,6 +96,8 @@ span.n {font-size:80%;font-style: monospace}
 {%-   else -%}
         {{thisl}}
 {%-   endif -%}
+{%- else -}
+—
 {%- endif -%}
 
 {%- if f.n -%}
