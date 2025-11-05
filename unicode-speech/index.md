@@ -37,6 +37,23 @@ span.n {font-size:80%;font-style: monospace}
 
 ----
 
+The table of Speech-Templates for Unicode Characters below is a non-normative collection of
+the suggested pronunciation for each Unicode character deemed relevant in mathematics.
+A default suggestion is provided. Alternative suggestions are formulated naming the
+_form_ or _context_ of use.
+
+
+One particular context of use is the _terse_, or _not-terse_ (understood to be more verbose).
+This is expected to correspond to a verbosity setting in the accessibility tool, which can be adjusted to
+produce more or less long speech depending on the background of the user.
+
+This table is indicative and may benefit from the contribution of multiple parties.
+See [w3.org/Math](https://w3.org/Math) to see how to contribute.
+
+Localised texts can be added to the YAML file:
+[unicode-speech.yml](https://github.com/w3c/mathml-docs/blob/main/_data/unicode-speech.yml)
+
+------
 
 <details>
 <summary>Available Template Languages</summary>
@@ -58,6 +75,7 @@ span.n {font-size:80%;font-style: monospace}
 </p>
 </details>
 
+-------
 
 <table style="width:100%;overflow:visible;">
 <thead>
@@ -127,3 +145,4 @@ function updatelang (e) {
   }
 }
 </script>
+
