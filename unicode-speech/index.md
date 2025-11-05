@@ -64,8 +64,7 @@ span.n {font-size:80%;font-style: monospace}
 <tr>
 <th>Unicode</th><th>Character</th>
 {%- for language in site.data.languages -%}
-<th class="{{language.language-code}}">
-<th>Speech Template {{language.label-regional}}</th>
+<th class="{{language.language-code}}">Speech Template {{language.label-regional}}</th>
 {%- endfor -%}
 </tr>
 </thead>
@@ -87,6 +86,7 @@ span.n {font-size:80%;font-style: monospace}
 {%- endif -%}
 
 {%- if f.en -%}
+{{language}}
 {%- assign thisl = f.en %}
 {%-   if thisl.choose -%}
 {%-     for c in thisl.choose  -%}
