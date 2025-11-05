@@ -1,8 +1,60 @@
 ---
 -
+    char: "\""
+    u: "0022"
+    en: quotation mark
+    es: "barra invertida"
+-
+    char: "#"
+    u: "0023"
+    en: number
+    es: "almohadilla"
+-
+    char: "$"
+    u: "0024"
+    en: dollars
+    es: "dólar"
+-
+    char: "'"
+    u: "0025"
+    en: 'apostrophe'
+    es: "prima"
+-
+    char: "&"
+    u: "0026"
+    en: "ampersand"
+    es: "ampersand"
+-
+    char: "*"
+    u: "0027"
+    en:
+      choose:
+        star-times: times
+	star-star: star
+    es:
+      choose:
+        star-times: por
+	star-star: estrella
+-
     char: +
     u: "002B"
     en: plus
+-
+    char: ","
+    u: "002C"
+    en:
+      choose:
+        speak-comma: comma
+	silent-comma: ""
+    es:
+      choose:
+        speak-comma: coma
+	silent-comma: ""
+-
+    char: "-"
+    u: "002D"
+    en: minus
+    es: menos
 -
     char: ¡
     u: "00A1"
