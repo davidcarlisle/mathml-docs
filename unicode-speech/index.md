@@ -87,7 +87,7 @@ span.n {font-size:80%;font-style: monospace}
 {%-       unless forloop.first %}<br/>{% endunless%}
           {{c | replace: eobj, " " | replace: bobj, '<b>' | replace: '"=>"', '</b>: '  }}
 {%-     endfor -%}
-{%-   else -%
+{%-   else -%}
         {{f.en}}
 {%-   endif -%}
 {%- endif -%}
