@@ -62,7 +62,11 @@ span.n {font-size:80%;font-style: monospace}
 <table style="width:100%">
 <thead>
 <tr>
-<th>Unicode</th><th>Character</th><th>Speech Template</th>
+<th>Unicode</th><th>Character</th>
+{%- for language in site.data.languages -%}
+<th class="{{language.language-code}}">
+<th>Speech Template {{language.label-regional}}</th>
+{%- endfor -%}
 </tr>
 </thead>
 <tbody>
@@ -72,7 +76,8 @@ span.n {font-size:80%;font-style: monospace}
 <tr id="U{{u[1].u | replace: " ", "_"}}">
 <td><a class="self" href="#U{{u[1].u | replace: " ", "_"}}">{{u[1].u}}</a></td>
 <td>{{u[0].char}}</td>
-<td>
+{%- for language in site.data.languages -%}
+<td class="{{language.language-code}}">
 {%- for f in u offset:2  -%}
 {%- unless forloop.first or f.n %}<hr class="sp"/>{% endunless%}
 
@@ -99,6 +104,7 @@ span.n {font-size:80%;font-style: monospace}
 
 {%- endfor -%}
 </td>
+{%- endfor -%}
 </tr>
 {%- endfor -%}
 </tbody>
