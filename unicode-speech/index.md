@@ -73,17 +73,11 @@ span.n {font-size:80%;font-style: monospace}
 {%- assign bobj = '{"' -%}
 {%- for u in site.data.unicode-speech -%}
 <tr id="U{{u[1].u | replace: " ", "_"}}">
-<td><a class="self" href="#U{{u[1].u | replace: " ", "_"}}">{{u[1].u}}</a></td>
-<td>{{u[0].char}}</td>
+<td><a class="self" href="#U{{u.u | replace: " ", "_"}}">{{u.u}}</a></td>
+<td>{{u.char}}</td>
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
 {%- for f in u offset:2  -%}
-{%- unless forloop.first or f.n %}<hr class="sp"/>{% endunless%}
-
-
-{%- if f.map -%}
-<b>map:</b> {{f.map}}
-{%- endif -%}
 
 {%- if f[language.language-code] -%}
 {{language.language-code}}
@@ -100,7 +94,14 @@ span.n {font-size:80%;font-style: monospace}
 —
 {%- endif -%}
 
-{%- if f.n -%}
+
+{%- if u.map -%}
+<hr class="sp"/>
+<b>map:</b> {{f.map}}
+{%- endif -%}
+
+{%- if u.n -%}
+<hr class="sp"/>
 <span class="n">&#160;&langle;{{f.n}}&rangle;</span>
 {%- endif -%}
 
