@@ -82,10 +82,9 @@ span.n {font-size:80%;font-style: monospace}
 {{language.language-code}}
 {%- assign thisl = u[language.language-code] -%}
 {%-   if thisl.choose -%}
-yes
 {%-     for c in thisl.choose  -%}
 {%-       unless forloop.first %}<br/>{% endunless%}
-          {{c | replace: eobj, " " | replace: bobj, '<b>' | replace: '"=>"', '</b>: '  }}
+          {{c | replace: '["', '<b>' | replace: '","', '</b>: ' |replace: ']', '' }}
 {%-     endfor -%}
 {%-   else -%}
         no{{thisl}}
