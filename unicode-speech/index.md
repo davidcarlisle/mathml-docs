@@ -86,7 +86,7 @@ span.n {font-size:80%;font-style: monospace}
           {{c | replace: '["', '<b>' | replace: '", "', '</b>: ' |replace: '"]', '' }}
 {%-     endfor -%}
 {%-   else -%}
-        no{{thisl}}
+        {{thisl}}
 {%-   endif -%}
 {%- else -%}
 —
