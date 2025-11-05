@@ -5,7 +5,7 @@
     en: plus
     es: es-plus
     de: de-plus
-    map:('abc','xyz')
+    map: ('АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ', 'абвгдежзийклмнопрстуфхцчшщъыьэюя')
     n: something
 -
     - char: ¡
