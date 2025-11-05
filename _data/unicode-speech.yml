@@ -30,11 +30,11 @@
     en:
       choose:
         star-times: times
-	star-star: star
+        star-star: star
     es:
       choose:
         star-times: por
-	star-star: estrella
+        star-star: estrella
 -
     char: +
     u: "002B"
@@ -45,11 +45,11 @@
     en:
       choose:
         speak-comma: comma
-	silent-comma: ""
+        silent-comma: ""
     es:
       choose:
         speak-comma: coma
-	silent-comma: ""
+        silent-comma: ""
 -
     char: "-"
     u: "002D"
