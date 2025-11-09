@@ -145,7 +145,6 @@ function updatelang (e) {
       urlq=urlq+opt.value +",";
     }
   }
-  alert("X: " + urlq);
   window.location.search=urlq;
 }
 
