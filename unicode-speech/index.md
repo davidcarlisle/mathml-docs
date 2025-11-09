@@ -73,7 +73,7 @@ Localised texts can be added to the YAML file:
             {%- if lang != "en" %} ({{language.label-english}}){% endif %}</label></span>
 {% endfor %}
 </p>
-<p><input type="button" onclick="seturlquery()"></p>
+<p><input type="button" value="Set URL" onclick="seturlquery()"></p>
 </details>
 
 -------
