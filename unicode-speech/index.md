@@ -137,7 +137,7 @@ var LangCss = document.getElementById('langcss');
 var langcb=document.getElementById('langchoice').getElementsByTagName('input');
 function updatelang (e) {
   LangCss.textContent='';
-  var urlq='';
+  var urlq='?lang=';
   for (var i=0, iLen=langcb.length; i<iLen; i++) {
     opt = langcb[i];
     if (!(opt.checked)) {
@@ -145,6 +145,7 @@ function updatelang (e) {
       urlq=urlq+opt.value",";
     }
   }
+  alert("X: " + urlq);
   window.location.search=urlq;
 }
 
