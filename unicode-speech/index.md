@@ -63,7 +63,7 @@ Localised texts can be added to the YAML file:
 {% assign lang = language.language-code %}
 <span class="cb">
  <input
-	onclick="updatelang(true)"
+	onchange="updatelang(e)"
 	type="checkbox"
 	{% if lang == "en" or lang == "Xfr" %} checked {% endif %}
       id="cb-{{lang}}"
@@ -73,6 +73,7 @@ Localised texts can be added to the YAML file:
             {%- if lang != "en" %} ({{language.label-english}}){% endif %}</label></span>
 {% endfor %}
 </p>
+<p><input type="button" onclick="seturlquery()"></p>
 </details>
 
 -------
@@ -137,16 +138,24 @@ var LangCss = document.getElementById('langcss');
 var langcb=document.getElementById('langchoice').getElementsByTagName('input');
 function updatelang (e) {
   LangCss.textContent='';
-  var urlq='?lang=';
   for (var i=0, iLen=langcb.length; i<iLen; i++) {
     opt = langcb[i];
     if (!(opt.checked)) {
       LangCss.textContent= LangCss.textContent + "*." + opt.value + " {display:none}";
+    }
+  }
+}
+
+function seturlquery() {
+  var urlq='?lang=';
+  for (var i=0, iLen=langcb.length; i<iLen; i++) {
+    opt = langcb[i];
+    if (opt.checked) {
       urlq=urlq+opt.value +",";
     }
   }
-  if(e)  window.location.search=urlq;
-}
+  window.location.search=urlq;
+  }
 
 function getQueryVariable(variable){
   var query = window.location.search.substring(1);
