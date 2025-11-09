@@ -142,7 +142,7 @@ function updatelang (e) {
     opt = langcb[i];
     if (!(opt.checked)) {
       LangCss.textContent= LangCss.textContent + "*." + opt.value + " {display:none}";
-      urlq=urlq+opt.value",";
+      urlq=urlq+opt.value +",";
     }
   }
   alert("X: " + urlq);
