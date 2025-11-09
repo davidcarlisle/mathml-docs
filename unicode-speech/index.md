@@ -137,12 +137,15 @@ var LangCss = document.getElementById('langcss');
 var langcb=document.getElementById('langchoice').getElementsByTagName('input');
 function updatelang (e) {
   LangCss.textContent='';
+  var urlq='';
   for (var i=0, iLen=langcb.length; i<iLen; i++) {
     opt = langcb[i];
     if (!(opt.checked)) {
       LangCss.textContent= LangCss.textContent + "*." + opt.value + " {display:none}";
+      urlq=urlq+opt.value",";
     }
   }
+  window.location.search=urlq;
 }
 
 function getQueryVariable(variable){
