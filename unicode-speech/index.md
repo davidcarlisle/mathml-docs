@@ -63,7 +63,7 @@ Localised texts can be added to the YAML file:
 {% assign lang = language.language-code %}
 <span class="cb">
  <input
-	onchange="updatelang(this)"
+	onclick="updatelang(this)"
 	type="checkbox"
 	{% if lang == "en" or lang == "Xfr" %} checked {% endif %}
       id="cb-{{lang}}"
