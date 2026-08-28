@@ -242,7 +242,7 @@ concepts:
     en: closed interval between $1 and $2
     fr: intervalle fermé entre $1 et $2
 
-- concept: inverse
+  - concept: inverse
     subject-area: functions and inverses
     arity: 1
     property: function*
