@@ -205,8 +205,8 @@ if c.link
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
 [{{cond.condition}}]:
-{% if cond[language.language-code] -%}
-{%- for l in cond[language.language-code] -%}
+{% if cond.speech[language.language-code] -%}
+{%- for l in cond.speech[language.language-code] -%}
 {{l}} {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}
 {%- else -%}
@@ -245,8 +245,8 @@ if c.link
 <td>{{c.property}}{%- unless c.default == false or c.arity == 0-%}*{%- endunless -%}</td>
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
-{%- if c[language.language-code] -%}
-{%- for l in c[language.language-code] -%}
+{%- if c.speech[language.language-code] -%}
+{%- for l in c.speech[language.language-code] -%}
 {{l}} {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}
 {%- else -%}
