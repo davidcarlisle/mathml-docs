@@ -165,7 +165,12 @@ if c.link
 </p>
 </details>
 
+{% comment %}
 {% assign cpts = site.data.core.concepts | sort: "subject-area" %}
+{% endcomment %%
+{% assign cpts = site.data.core.concepts %}
+
+
 {% assign subjt = "" %}
 
 <table style="width:100%">

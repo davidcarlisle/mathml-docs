@@ -235,7 +235,14 @@ concepts:
     en: open interval between $1 and $2
     fr: intervalle ouvert
   
-  - concept: inverse
+  - concept: closed-interval
+    subject-area: functions and inverses
+    arity: 2
+    property: function
+    en: closed interval between $1 and $2
+    fr: intervalle fermé entre $1 et $2
+
+- concept: inverse
     subject-area: functions and inverses
     arity: 1
     property: function*
@@ -1575,9 +1582,3 @@ concepts:
       </mstack>
       ```
 
-  - concept: closed-interval
-    subject-area: functions and inverses
-    arity: 2
-    property: function
-    en: closed interval between $1 and $2
-    fr: intervalle fermé entre $1 et $2
