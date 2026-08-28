@@ -165,6 +165,8 @@ if c.link
 </p>
 </details>
 
+{% assign cpts = site.data.languages | sort "subject-area" %}
+{% assign subjt = "" %}
 
 <table style="width:100%">
 <thead>
@@ -179,7 +181,11 @@ if c.link
 </tr>
 </thead>
 <tbody>
-{%- for c in site.data.core.concepts -%}
+{%- for c in cpts -%}
+{%- if c.subject-area != subjt -%}
+{%- assign subjt = c.subject-area -%}}
+<tr><th colspan="6">{{subjt}}</th></tr>
+{%- endif -%}
 {%- assign clss = forloop.index| modulo:2 -%}
 {%- assign arityr = c.arity | replace: ">=", "⩾" -%}
 {%- assign arityu = c.arity | replace: ">=", "GEQ" -%}

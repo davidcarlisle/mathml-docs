@@ -213,12 +213,6 @@ defaultfixity:
 concepts:
   
   ## ================ 4.4.1 functions and inverses ====================
-  - concept: closed-interval
-    subject-area: functions and inverses
-    arity: 2
-    property: function
-    en: closed interval between $1 and $2
-    fr: intervalle fermé entre $1 et $2
   
   - concept: closed-open-interval
     subject-area: functions and inverses
@@ -1579,3 +1573,10 @@ concepts:
         <mn>0.045</mn>
       </mstack>
       ```
+
+  - concept: closed-interval
+    subject-area: functions and inverses
+    arity: 2
+    property: function
+    en: closed interval between $1 and $2
+    fr: intervalle fermé entre $1 et $2
