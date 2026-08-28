@@ -233,7 +233,15 @@ if c.link
 {%- else -%}
 <tr id="{{c.concept}}{{arityu}}{{propertyu}}" class="row{{ clss }}">
 <td><a class="self" href="#{{c.concept}}{{arityu}}{{propertyu}}">{{c.concept}}</a></td>
-<td>{{arityr}}</td>
+<td>
+{{arityr}}<br/>
+[
+{%- for arg in c.arguments -%
+{{arg}}
+{%- unless forloop.last -%},{% endunless -%}
+{%- endfor -%}
+]
+</td>
 <td>{{c.property}}{%- unless c.default == false or c.arity == 0-%}*{%- endunless -%}</td>
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
