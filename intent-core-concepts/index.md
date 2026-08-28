@@ -190,7 +190,7 @@ if c.link
 {%- for c in cpts -%}
 {%- if c.subject-area != subjt -%}
 {%- assign subjt = c.subject-area -%}
-<tr class="subj"><th colspan="20">{{subjt}}</th></tr>
+<tr class="subj"><th colspan="3">{{subjt}}</th></tr>
 {%- endif -%}
 {%- assign clss = forloop.index| modulo:2 -%}
 {%- assign arityr = c.arity | replace: ">=", "⩾" -%}
