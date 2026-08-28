@@ -168,7 +168,7 @@ if c.link
 
 {% comment %}
 {% assign cpts = site.data.core.concepts | sort: "subject-area" %}
-{% endcomment %%
+{% endcomment %}
 {% assign cpts = site.data.core.concepts %}
 
 
