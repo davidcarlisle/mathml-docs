@@ -165,7 +165,7 @@ if c.link
 </p>
 </details>
 
-{% assign cpts = site.data.languages | sort "subject-area" %}
+{% assign cpts = site.data.languages | sort: "subject-area" %}
 {% assign subjt = "" %}
 
 <table style="width:100%">
