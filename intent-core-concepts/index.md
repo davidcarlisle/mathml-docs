@@ -165,9 +165,6 @@ if c.link
 </p>
 </details>
 
-{%- for section in site.data.core.concepts -%}
-
-### {{section.title}}
 
 <table style="width:100%">
 <thead>
@@ -182,7 +179,7 @@ if c.link
 </tr>
 </thead>
 <tbody>
-{%- for c in section.intents -%}
+{%- for c in site.data.core.concepts -%}
 {%- assign clss = forloop.index| modulo:2 -%}
 {%- assign arityr = c.arity | replace: ">=", "⩾" -%}
 {%- assign arityu = c.arity | replace: ">=", "GEQ" -%}
@@ -256,7 +253,7 @@ if c.link
 </tbody>
 </table>
 <hr>
-{%- endfor -%}
+
 
 ### Key
 
