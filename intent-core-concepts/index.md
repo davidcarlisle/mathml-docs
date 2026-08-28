@@ -34,6 +34,7 @@ tr:target >td:first-child {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body table tr.row0, .markdown-body table th.row0 {background-color:#F6F8FA}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
+.markdown-body table tr.subj {background-color:beige;font-size:110%;text-align:left;}
 a.link {font-weight:500}
 a.self {color: black; font-weight:500}
 </style>
@@ -189,7 +190,7 @@ if c.link
 {%- for c in cpts -%}
 {%- if c.subject-area != subjt -%}
 {%- assign subjt = c.subject-area -%}
-<tr><th colspan="6">{{subjt}}</th></tr>
+<tr class="subj"><th colspan="6">{{subjt}}</th></tr>
 {%- endif -%}
 {%- assign clss = forloop.index| modulo:2 -%}
 {%- assign arityr = c.arity | replace: ">=", "⩾" -%}
