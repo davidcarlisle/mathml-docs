@@ -381,6 +381,12 @@ concepts:
     en: lest common multiple of  $1, $2, ...
     fr: plus grand commun diviseur de $1, $2, ...
   
+  - concept: least-common-denominator
+    subject-area: functions and inverses
+    arity: ">=2"
+    property: function
+    en: "least common denominator of $1, $2, ..."
+
   - concept: absolute-value
     subject-area: functions and inverses
     arity: 1
@@ -1407,11 +1413,6 @@ concepts:
     - "this typically would be used inside of a larger expression and not on its own"
     - "this might be used with `<menclose notation='box'>` or similar. It might also be used with color changes, although may be done with CSS"
   
-  - concept: least-common-denominator
-    subject-area: functions and inverses
-    arity: ">=2"
-    property: function
-    en: "least common denominator of $1, $2, ..."
   
   - concept: rate
     subject-area: General Concepts
