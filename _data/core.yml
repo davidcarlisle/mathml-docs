@@ -1401,6 +1401,7 @@ concepts:
     - "this might be used with `<menclose notation='box'>` or similar. It might also be used with color changes, although may be done with CSS"
   
   - concept: least-common-denominator
+    subject-area: functions and inverses
     arity: ">=2"
     property: function
     en: "least common denominator of $1, $2, ..."
