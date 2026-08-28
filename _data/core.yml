@@ -219,39 +219,44 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: function
-    en: interval between a1 (included) and a2
-    fr: intervalle ouvert à droite entre a1 et a2
+    speech:
+      en: interval between a1 (included) and a2
+      fr: intervalle ouvert à droite entre a1 et a2
   
   - concept: open-closed-interval
     subject-area: functions and inverses
     arity: 2
     arguments: [a1,a2]
     property: function
-    en:  interval between a1 and a2, included
-    fr: intervalle ouvert à gauche...
+    speech:
+      en:  interval between a1 and a2, included
+      fr: intervalle ouvert à gauche...
   
   - concept: open-interval
     subject-area: functions and inverses
     arity: 2
     arguments: [a1,a2]
     property: function
-    en: open interval between a1 and a2
-    fr: intervalle ouvert
+    speech:
+      en: open interval between a1 and a2
+      fr: intervalle ouvert
   
   - concept: closed-interval
     subject-area: functions and inverses
     arity: 2
     arguments: [a1,a2]
     property: function
-    en: closed interval between a1 and a2
-    fr: intervalle fermé entre a1 et a2
+    speech:
+      en: closed interval between a1 and a2
+      fr: intervalle fermé entre a1 et a2
 
   - concept: inverse
     subject-area: functions and inverses
     arity: 1
     arguments: [a1]
     property: function*
-    en: inverse of a1
+    speech:
+      en: inverse of a1
     comments:
     - "`inverse` can be used for function inverses, matrix inverses, etc."
   
@@ -260,45 +265,51 @@ concepts:
     arity: 1
     arguments: [a1]
     property: postfix
-    en: a1 inverse
+    speech:
+      en: a1 inverse
   
   - concept: domain
     subject-area: functions and inverses
     arity: 1
     arguments: [a1]
     property: function
-    en: domain of a1
-    fr: domaine de définition de a1
+    speech:
+      en: domain of a1
+      fr: domaine de définition de a1
   
   - concept: codomain
     subject-area: functions and inverses
     arity: 1
     arguments: [a1]
     property: function
-    en: codomain of a1
-    fr: ensemble d'arrivée de a1
+    speech:
+      en: codomain of a1
+      fr: ensemble d'arrivée de a1
   
   - concept: image
     subject-area: functions and inverses
     arity: 1
     arguments: [a1]
     property: function*
-    en: image of a1
-    fr: image de a1
+    speech:
+      en: image of a1
+      fr: image de a1
   
   - concept: fraction
     subject-area: functions and inverses
     arity: 2
     arguments: [a1,a2]
     property: function
-    en: fraction a1 over a2 end fraction
+    speech:
+      en: fraction a1 over a2 end fraction
   
   - concept: mixed-fraction
     subject-area: functions and inverses
     arity: 2
     arguments: [a1,a2]
     property: function
-    en: a1 and a2
+    speech:
+      en: a1 and a2
     comments:
     - "a1 is a positive integer and a2 is a fraction with positive numerical components.
       The second argument can be an `mfrac` (normal or beveled) or can be a linear fraction using `/`"
@@ -308,15 +319,17 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: function
-    en: integer part of a1 divided by a2
-    fr: quotient de a1 par a2
+    speech:
+      en: integer part of a1 divided by a2
+      fr: quotient de a1 par a2
   
   - concept: evaluated-at
     subject-area: functions and inverses
     arity: 2
     arguments: [a1,a2]
     property: infix
-    en: a1 evaluated-at a2
+    speech:
+      en: a1 evaluated-at a2
     comments:
     - "Two common notations are
       <math><mrow><msub><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>|</mo></mrow></mrow><mn>3</mn></msub></mrow></math>
@@ -336,22 +349,25 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: function
-    en: the remainder of a1 divided by a2
-    fr: reste de la divsion de a1 par a2
+    speech:
+      en: the remainder of a1 divided by a2
+      fr: reste de la divsion de a1 par a2
   
   - concept: max
     subject-area: functions and inverses
     arity: ">=1"
     arguments: [a1,...]
     property: function
-    en: "max of a1, ..."
+    speech:
+      en: "max of a1, ..."
   
   - concept: min
     subject-area: functions and inverses
     arity: ">=1"
     arguments: [a1,...]
     property: function
-    en: "min of a1, ..."
+    speech:
+      en: "min of a1, ..."
   
   - concept: power
     subject-area: functions and inverses
@@ -360,14 +376,17 @@ concepts:
     property: infix
     conditions:
       - condition: "a2=2"
-        en: "a1 squared"
-        fr: "a1 carré"
+        speech:
+          en: "a1 squared"
+          fr: "a1 carré"
       - condition: "a2=3"
-        en: "a1 cubed"
-        fr: "a1 cube"
+        speech:
+          en: "a1 cubed"
+          fr: "a1 cube"
       - condition: ""
-        en: "a1 to the a2<i>th</i> power"
-        fr: "a1 à la a2"
+        speech:
+          en: "a1 to the a2<i>th</i> power"
+          fr: "a1 à la a2"
   
   
   - concept: root
@@ -377,83 +396,96 @@ concepts:
     property: function
     conditions:
       - condition: "a2=2"
-        en: "square root of a1"
+        speech:
+          en: "square root of a1"
       - condition: "a2=3"
-        en: "cube root of a1"
+        speech:
+          en: "cube root of a1"
       - condition: "a2=4"
-        en: "fourth root of a1"
+        speech:
+          en: "fourth root of a1"
       - condition: ""
-        en: "a2<i>th</i> root of a1"
+        speech:
+          en: "a2<i>th</i> root of a1"
   
   - concept: greatest-common-divisor
     subject-area: functions and inverses
     arity: ">=2"
     arguments: [a1,a2,...]
     property: function
-    en: greatest common divisor of a1, a2, ...
-    fr: plus grand commun diviseur de a1, a2, ...
+    speech:
+      en: greatest common divisor of a1, a2, ...
+      fr: plus grand commun diviseur de a1, a2, ...
   
   - concept: least-common-multiple
     subject-area: functions and inverses
     arity: ">=2"
     arguments: [a1,a2,...]
     property: function
-    en: lest common multiple of  a1, a2, ...
-    fr: plus grand commun diviseur de a1, a2, ...
+    speech:
+      en: lest common multiple of  a1, a2, ...
+      fr: plus grand commun diviseur de a1, a2, ...
   
   - concept: least-common-denominator
     subject-area: functions and inverses
     arity: ">=2"
     arguments: [a1,a2,...]
     property: function
-    en: "least common denominator of a1, a2, ..."
+    speech:
+      en: "least common denominator of a1, a2, ..."
 
   - concept: absolute-value
     subject-area: functions and inverses
     arity: 1
     arguments: [a1]
     property: function
-    en: absolute value of a1
-    fr: valeur absolue de a1
-    de: Betrag von a1
+    speech:
+      en: absolute value of a1
+      fr: valeur absolue de a1
+      de: Betrag von a1
   
   - concept: complex-conjugate
     subject-area: functions and inverses
     arity: 1
     arguments: [a1]
     property: function
-    en: complex conjugate of a1
-    fr: a1 conjugé
+    speech:
+      en: complex conjugate of a1
+      fr: a1 conjugé
   
   - concept: complex-arg
     subject-area: functions and inverses
     arity: 1
     arguments: [a1]
     property: function
-    en: arg of a1
+    speech:
+      en: arg of a1
   
   - concept: real-part
     subject-area: functions and inverses
     arity: 1
     arguments: [a1]
     property: function
-    en:
-    - real part of a1
-    - imaginary part of a1
+    speech:
+      en:
+        - real part of a1
+        - imaginary part of a1
     
   - concept: imaginary-part
     subject-area: functions and inverses
     arity: 1
     arguments: [a1]
     property: function
-    en: imaginary part of a1
+    speech:
+      en: imaginary part of a1
   
   - concept: polar-coordinate
     subject-area: functions and inverses
     arity: 2
     arguments: [a1,a2]
     property: function
-    en: "polar coordinate a1 comma a2"
+    speech:
+      en: "polar coordinate a1 comma a2"
     comment:
     - "The first argument is the radius, the second argument is the polar angle, the third arguments is the azimuthal angle."
     - "Example: <math><mo>(</mo><mi>r</mi><mo>,</mo><mo>&#xA0;</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
@@ -463,7 +495,8 @@ concepts:
     arity: 3
     arguments: [a1,a2,a3]
     property: function
-    en: "spherical coordinate a1 comma a2, comma a3"
+    speech:
+      en: "spherical coordinate a1 comma a2, comma a3"
     comment:
     - "The first argument is the radius, the second argument is the angle."
     - "Example: <math><mo>(</mo><mi>r</mi><mo>,</mo><mi>&#x3A6;</mi><mo>,</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
@@ -473,7 +506,8 @@ concepts:
     arity: ">=2"
     arguments: [a1,a2,...]
     property: function
-    en: "cartesian coordinate a1 comma a2 ..."
+    speech:
+      en: "cartesian coordinate a1 comma a2 ..."
     comment:
     - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
   
@@ -482,7 +516,8 @@ concepts:
     arity: ">=2"
     arguments: [a1,a2,...]
     property: function
-    en: "coordinate a1 comma a2 ..."
+    speech:
+      en: "coordinate a1 comma a2 ..."
     comment:
     - "This a generic coordinate that doesn't specify the coordinate system. It takes 2 or more arguments."
     - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
@@ -492,21 +527,24 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en: floor of a1
+    speech:
+      en: floor of a1
   
   - concept: ceiling
     subject-area: functions and inverses
     arity: 1
     arguments: [a1]
     property: function
-    en: ceiling of a1
+    speech:
+      en: ceiling of a1
   
   - concept: round
     subject-area: functions and inverses
     arity: 1
     arguments: [a1]
     property: function
-    en: rounded-value of a1
+    speech:
+      en: rounded-value of a1
     comments:
     - "This sometimes uses the notation
       <math><mo>&#x230A;</mo><mi>x</mi><mo>&#x2309;</mo></math>
@@ -518,7 +556,8 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en: fractional part of a1
+    speech:
+      en: fractional part of a1
   
   ## ====================== 4.4.4 Calculus ============================
   - concept: definite-integral
@@ -526,7 +565,8 @@ concepts:
     arity: 1
     arguments: [a1]
     property: ???
-    en: "integral over a1"
+    speech:
+      en: "integral over a1"
     comments:
     - "integral sign is not an argument"
   
@@ -535,7 +575,8 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: ???
-    en: "integral from a1 to a2"
+    speech:
+      en: "integral from a1 to a2"
     comments:
     - "integral sign is not an argument"
   
@@ -545,9 +586,10 @@ concepts:
     arity: 3
     arguments: [a1,a2,a3]
     property: ???
-    en:
-    - "(verbose) the a3 derivative of a1 with respect to a2"
-    - "(terse) d <a3 if a3 != 1> a1 by d a2 <a3 if a3 != 1>"
+    speech:
+      en:
+        - "(verbose) the a3 derivative of a1 with respect to a2"
+        - "(terse) d <a3 if a3 != 1> a1 by d a2 <a3 if a3 != 1>"
     comments:
     - "the terse reading only makes sense for Leibniz notation such as 
         <math><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>y</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></math>
@@ -577,8 +619,9 @@ concepts:
     arity: ">=3"
     arguments: [a1,a2,a3,...]
     property: ???
-    en:
-    - "partial <sum a3+2i> a1 partial a2 <a3 if a3 != 1> [partial a4 <a5 if a5 != 1> ...]"
+    speech:
+      en:
+        - "partial <sum a3+2i> a1 partial a2 <a3 if a3 != 1> [partial a4 <a5 if a5 != 1> ...]"
     comments:
     - |
       ```
@@ -599,7 +642,8 @@ concepts:
     arity: 1
     arguments: [a1]
     property: prefix
-    en: "limit as a1"
+    speech:
+      en: "limit as a1"
     comments:
     - "limit is not an argument, but intent should be on `msub` or `munder`"
     - "There are several arrows used for limits. "
@@ -630,7 +674,8 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: infix
-    en: "a1 tends to a2"
+    speech:
+      en: "a1 tends to a2"
     comments:
     - "see \"limit\" example"
   
@@ -639,7 +684,8 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: infix
-    en: "a1 tends to from above a2"
+    speech:
+      en: "a1 tends to from above a2"
     comments:
     - "see \"limit\" example"
   
@@ -648,7 +694,8 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: infix
-    en: "a1 tends to from below a2"
+    speech:
+      en: "a1 tends to from below a2"
     comments:
     - "see \"limit\" example"
   
@@ -658,7 +705,8 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en: "set of a1"
+    speech:
+      en: "set of a1"
     comments:
     - |
              the argument to `set` is typically an `mrow`. For example:
@@ -686,7 +734,8 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: function
-    en: "set difference of a1 and a2"
+    speech:
+      en: "set difference of a1 and a2"
     comments:
     - "This can be spoken in many ways. See other entry for infix speech."
     - "There are several notations that are used and their order of appearance differs:
@@ -697,7 +746,8 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: infix
-    en: "\"a1 minus a2\" or \"a2 subtracted from a1\""
+    speech:
+      en: "\"a1 minus a2\" or \"a2 subtracted from a1\""
     comments:
     - "This can be spoken in many ways. See other entry for functional speech."
     - "See functional form for some notational usages."
@@ -707,7 +757,8 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en: "complement of a1"
+    speech:
+      en: "complement of a1"
     comments:
     - "This can be spoken in many ways. See other entry for functional speech."
     - "Two notations used for complement are: 
@@ -717,7 +768,8 @@ concepts:
     subject-area: sets
     arity: 0
     arguments: []
-    en: "empty set"
+    speech:
+      en: "empty set"
     comments:
     - "Three notations used for empty set are: { }, ∅, and ∅"
   
@@ -734,13 +786,15 @@ concepts:
     subject-area: sets
     arity: ">=0"
     arguments: [a1,...]
-    en: "list of a1, ..."
+    speech:
+      en: "list of a1, ..."
   
   - concept: tuple
     subject-area: sets
     arity: ">=0"
     arguments: [a1,...]
-    en: "tuple of a1, ..."
+    speech:
+      en: "tuple of a1, ..."
   
   ## ====================== 4.4.6 sequence and series ============================
   - concept: sum
@@ -748,7 +802,8 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en: "sum of a1"
+    speech:
+      en: "sum of a1"
     comments:
     - usually on `<mrow>`
   
@@ -757,7 +812,8 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: function
-    en: "sum over a1 of a2"
+    speech:
+      en: "sum over a1 of a2"
     comments:
     - usually on `<munder>` or `<msub>`
   
@@ -766,7 +822,8 @@ concepts:
     arity: 3
     arguments: [a1,a2,a3]
     property: function
-    en: "sum from a1 to a2 of a3"
+    speech:
+      en: "sum from a1 to a2 of a3"
     comments:
     - usually on `<munderover>` or `<msubsup>`
   
@@ -775,7 +832,8 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en: "product of a1"
+    speech:
+      en: "product of a1"
     comments:
     - usually on `<mrow>`
       
@@ -784,7 +842,8 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: function
-    en: "product over a1 of a2"
+    speech:
+      en: "product over a1 of a2"
     comments:
     - usually on `<munder>` or `<msub>`
   
@@ -793,7 +852,8 @@ concepts:
     arity: 3
     arguments: [a1,a2,a3]
     property: function
-    en: "product from a1 to a2 of a3"
+    speech:
+      en: "product from a1 to a2 of a3"
     comments:
     - usually on `<munderover>` or `<msubsup>`
   
@@ -804,8 +864,9 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en: "sine a1"
-    fr: "sinus a1"
+    speech:
+      en: "sine a1"
+      fr: "sinus a1"
     comments:
     - used as 'sin', 'sen'
   
@@ -814,18 +875,20 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en:
-    - "(verbose) cosine a1"
-    - "(terse) cos a1"
+    speech:
+      en:
+        - "(verbose) cosine a1"
+        - "(terse) cos a1"
   
   - concept: tangent
     subject-area: elementary classical functions
     arity: 1
     arguments: [a1]
     property: function
-    en:
-    - "(verbose) tangent a1"
-    - "(terse) tan a1"
+    speech:
+      en:
+        - "(verbose) tangent a1"
+        - "(terse) tan a1"
     comments:
     - used as 'tan', 'tg'
   
@@ -834,9 +897,10 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en:
-    - "(verbose) secant a1"
-    - "(terse) seech a1"
+    speech:
+      en:
+        - "(verbose) secant a1"
+        - "(terse) seech a1"
     comments:
     - used as 'sec'
   
@@ -845,9 +909,10 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en:
-    - "(verbose) cosecant a1"
-    - "(terse) co-seech a1"
+    speech:
+      en:
+        - "(verbose) cosecant a1"
+        - "(terse) co-seech a1"
     comments:
     - used as 'csc'
   
@@ -856,9 +921,10 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en:
-    - "(verbose) cotangent a1"
-    - "(terse) co-tan a1"
+    speech:
+      en:
+        - "(verbose) cotangent a1"
+        - "(terse) co-tan a1"
     comments:
     - used as 'cot'
   
@@ -869,8 +935,9 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en:
-    - "(verbose) arcsine a1"
+    speech:
+      en:
+        - "(verbose) arcsine a1"
     comments:
     - "used as 'arcsin', 'arc sin'"
     - "this is distinct from sin inverse (<math><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>)"
@@ -880,8 +947,9 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en:
-    - "(verbose) arccosine a1"
+    speech:
+      en:
+        - "(verbose) arccosine a1"
     comments:
     - "used as 'arccos', 'arc cos'"
   
@@ -890,8 +958,9 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en:
-    - "(verbose) arctangent a1"
+    speech:
+      en:
+        - "(verbose) arctangent a1"
     comments:
     - "used as 'arctan', 'arc tan'"
   
@@ -900,8 +969,9 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en:
-    - "(verbose) arcsecant a1"
+    speech:
+      en:
+        - "(verbose) arcsecant a1"
     comments:
     - "used as 'arcsec', 'arc sec'"
   
@@ -910,8 +980,9 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en:
-    - "(verbose) arc-cosecant a1"
+    speech:
+      en:
+        - "(verbose) arc-cosecant a1"
     comments:
     - "used as 'arccos', 'arc cos'"
   
@@ -920,8 +991,9 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en:
-    - "(verbose) arc-cotangent a1"
+    speech:
+      en:
+        - "(verbose) arc-cotangent a1"
     comments:
     - "used as 'arccos', 'arc cos'"
   
@@ -934,10 +1006,11 @@ concepts:
     comments:
     - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
     - "used as 'sinh'"
-    en:
-      - "short form 'shine a1'"
-    fr:
-      - "sinus hyperbolique a1"
+    speech:
+      en:
+        - "short form 'shine a1'"
+      fr:
+        - "sinus hyperbolique a1"
   
   
   - concept: hyperbolic-cosine
@@ -948,11 +1021,12 @@ concepts:
     comments:
     - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
     - "used as 'cosh'"
-    en:
+    speech:
+      en:
       - "short form 'cosh a1'"
-    fr:
-     - "cosh a1"
-     - "kosh a1"
+      fr:
+       - "cosh a1"
+       - "kosh a1"
   
   - concept: hyperbolic-tangent
     subject-area: elementary classical functions
@@ -962,9 +1036,10 @@ concepts:
     comments:
     - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
     - "used as 'tanh'"
-    en:
-      - "short form American 'tanch a1'"
-      - "short form British 'than a1'"
+    speech:
+      en:
+        - "short form American 'tanch a1'"
+        - "short form British 'than a1'"
   
   - concept: hyperbolic-secant
     subject-area: elementary classical functions
@@ -974,9 +1049,10 @@ concepts:
     comments:
     - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
     - "used as 'sech'"
-    en:
-      - "short form American 'sech a1'"
-      - "short form British 'shek a1'"
+    speech:
+      en:
+        - "short form American 'sech a1'"
+        - "short form British 'shek a1'"
   
   - concept: hyperbolic-cosecant
     subject-area: elementary classical functions
@@ -986,9 +1062,10 @@ concepts:
     comments:
     - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
     - "used as 'cosech'"
-    en:
-      - "short form American 'cosech a1'"
-      - "short form British 'coshek a1'"
+    speech:
+      en:
+        - "short form American 'cosech a1'"
+        - "short form British 'coshek a1'"
   
   
   - concept: hyperbolic-cotangent
@@ -999,9 +1076,10 @@ concepts:
     comments:
     - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
     - "used as 'coth'"
-    en:
-      - "short form American 'coth a1'"
-      - "short form British 'coath a1'"
+    speech:
+      en:
+        - "short form American 'coth a1'"
+        - "short form British 'coath a1'"
   
   
   
@@ -1013,10 +1091,11 @@ concepts:
     property: function
     comments:
     - "used as 'asinh'"
-    en:
-      - "short form 'arc shine a1'"
-    fr:
-      - "sinus hyperbolique a1"
+    speech:
+      en:
+        - "short form 'arc shine a1'"
+      fr:
+        - "sinus hyperbolique a1"
   
   
   - concept: arc-hyperbolic-cosine
@@ -1026,11 +1105,12 @@ concepts:
     property: function
     comments:
     - "used as 'acosh'"
-    en:
-      - "short form 'arc cosh a1'"
-    fr:
-     - "cosh a1"
-     - "kosh a1"
+    speech:
+      en:
+        - "short form 'arc cosh a1'"
+      fr:
+        - "cosh a1"
+        - "kosh a1"
   
   - concept: arc-hyperbolic-tangent
     subject-area: elementary classical functions
@@ -1039,9 +1119,10 @@ concepts:
     property: function
     comments:
     - "used as 'atanh'"
-    en:
-      - "short form American 'arc tanch a1'"
-      - "short form British 'arc than a1'"
+    speech:
+      en:
+        - "short form American 'arc tanch a1'"
+        - "short form British 'arc than a1'"
   
   - concept: arc-hyperbolic-secant
     subject-area: elementary classical functions
@@ -1050,9 +1131,10 @@ concepts:
     property: function
     comments:
     - "used as 'asech'"
-    en:
-      - "short form American 'arc sech a1'"
-      - "short form British 'arc shek a1'"
+    speech:
+      en:
+        - "short form American 'arc sech a1'"
+        - "short form British 'arc shek a1'"
   
   - concept: arc-hyperbolic-cosecant
     subject-area: elementary classical functions
@@ -1061,9 +1143,10 @@ concepts:
     property: function
     comments:
     - "used as 'acsch'"
-    en:
-      - "short form American 'arc cosech a1'"
-      - "short form British 'arc coshek a1'"
+    speech:
+      en:
+        - "short form American 'arc cosech a1'"
+        - "short form British 'arc coshek a1'"
   
   
   - concept: arc-hyperbolic-cotangent
@@ -1073,9 +1156,10 @@ concepts:
     property: function
     comments:
     - "used as 'acoth'"
-    en:
-      - "short form American 'arc coth a1'"
-      - "short form British 'arc coath a1'"
+    speech:
+      en:
+        - "short form American 'arc coth a1'"
+        - "short form British 'arc coath a1'"
   
   
   ## exponential related functions
@@ -1084,7 +1168,8 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en:
+    speech:
+      en:
       - "exponential of a1"
   
   - concept: natural-logarithm
@@ -1092,7 +1177,8 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en:
+    speech:
+      en:
       - "natural log of a1"
       - "log of a1"
   
@@ -1101,14 +1187,16 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en: "log of a1"
+    speech:
+      en: "log of a1"
   
   - concept: logarithm
     subject-area: elementary classical functions
     arity: 2
     arguments: [a1,a2]
     property: function
-    en: "log base a2 of a1"
+    speech:
+      en: "log base a2 of a1"
   
   
   
@@ -1119,7 +1207,8 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en: "mean of a1"
+    speech:
+      en: "mean of a1"
     comments:
     - "This might be display as <math><mover><mi>x</mi><mo>&#xAF;</mo></mover></math>"
   
@@ -1128,28 +1217,32 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en: "standard deviation of a1"
+    speech:
+      en: "standard deviation of a1"
   
   - concept: variance
     subject-area: Statistics and Probability
     arity: 1
     arguments: [a1]
     property: function
-    en: "variance of a1"
+    speech:
+      en: "variance of a1"
   
   - concept: median
     subject-area: Statistics and Probability
     arity: 1
     arguments: [a1]
     property: function
-    en: "median of a1"
+    speech:
+      en: "median of a1"
   
   - concept: mode
     subject-area: Statistics and Probability
     arity: 1
     arguments: [a1]
     property: function
-    en: "mode of a1"
+    speech:
+      en: "mode of a1"
   
   
   
@@ -1158,7 +1251,8 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: function
-    en: "probability of a1 given a2"
+    speech:
+      en: "probability of a1 given a2"
     comments:
     - |
               The intent should be on the `mrow` that includes the "P"
@@ -1240,7 +1334,8 @@ concepts:
     property: prefix
     comments:
     - "Example: <math><mover><mi>x</mi><mo>^</mo></mover></math>"
-    en: "unit vector x"
+    speech:
+      en: "unit vector x"
   
   - concept: identity-matrix
     subject-area: Linear Algebra
@@ -1248,15 +1343,17 @@ concepts:
     arguments: []
     comments:
     - "This is typically represented as 'I' or bold-faced '𝐈'"
-    en: "identity matrix"
+    speech:
+      en: "identity matrix"
   
   - concept: transpose
     subject-area: Linear Algebra
     arity: 1
     arguments: [a1]
     property: postfix
-    en: "a1 transpose"
-    fr: "a1 transposée"
+    speech:
+      en: "a1 transpose"
+      fr: "a1 transposée"
   
   - concept: transpose
     subject-area: Linear Algebra
@@ -1264,8 +1361,9 @@ concepts:
     arguments: [a1]
     property: function
     default: false
-    en: "transpose of a1"
-    fr: "transposée de a1"
+    speech:
+      en: "transpose of a1"
+      fr: "transposée de a1"
   
   - concept: dimensional-product
     subject-area: Linear Algebra
@@ -1273,7 +1371,8 @@ concepts:
     arguments: [a1,a2,...]
     property: infix
     default: false
-    en: "a1 by a2 ..."
+    speech:
+      en: "a1 by a2 ..."
     comments:
     - "This is typically used with the `×` operator and can be placed on that character as a 0-arity concept name.
               A common use would be describe the size of a matrix. For example <math><mi>m</mi><mo>×</mo><mi>n</mi></math>."
@@ -1284,78 +1383,88 @@ concepts:
     subject-area: Constants and Sets
     arity: 0
     arguments: []
-    en:
-    - "(verbose) set of all integers"
-    - "(terse) Z"
-    fr: "Z"
+    speech:
+      en:
+        - "(verbose) set of all integers"
+        - "(terse) Z"
+      fr: "Z"
   
   - concept: set-of-reals
     subject-area: Constants and Sets
     arity: 0
     arguments: []
-    en:
-    - "(verbose) set of all real numbers"
-    - "(terse) R"
+    speech:
+      en:
+        - "(verbose) set of all real numbers"
+        - "(terse) R"
   
   - concept: set-of-rationals
     subject-area: Constants and Sets
     arity: 0
     arguments: []
-    en:
-    - "(verbose) set of all rational numbers"
-    - "(terse) R"
+    speech:
+      en:
+        - "(verbose) set of all rational numbers"
+        - "(terse) R"
   
   - concept: set-of-natural-numbers
     subject-area: Constants and Sets
     arity: 0
     arguments: []
-    en:
-    - "(verbose) set of all natural numbers"
-    - "(terse) N"
+    speech:
+      en:
+        - "(verbose) set of all natural numbers"
+        - "(terse) N"
   
   - concept: set-of-complex-numbers
     subject-area: Constants and Sets
     arity: 0
     arguments: []
-    en:
-    - "(verbose) set of all complex numbers"
-    - "(terse) C"
+    speech:
+      en:
+        - "(verbose) set of all complex numbers"
+        - "(terse) C"
   
   - concept: set-of-primes
     subject-area: Constants and Sets
     arity: 0
     arguments: []
-    en:
-    - "(verbose) set of all prime numbers"
-    - "(terse) P"
+    speech:
+      en:
+        - "(verbose) set of all prime numbers"
+        - "(terse) P"
   
   - concept: exponential-e
     subject-area: Constants and Sets
     arity: 0
     arguments: []
-    en: "e"
-    fr: "e"
+    speech:
+      en: "e"
+      fr: "e"
   
   - concept: imaginary-i
     subject-area: Constants and Sets
     arity: 0
     arguments: []
-    en: "i"
-    fr: "i"
+    speech:
+      en: "i"
+      fr: "i"
   
   - concept: differential-d
     subject-area: Constants and Sets
     arity: 0
     arguments: []
-    en: "d"
-    fr: "d"
+    speech:
+      en: "d"
+      fr: "d"
   
   - concept: golden-ratio
     subject-area: Constants and Sets
     arity: 0
     arguments: []
-    en: "golden ratio"
-    fr: "d"
+    speech:
+      en: "golden ratio"
+      fr: "d"
     comments:
     - "Often denoted as φ"
   
@@ -1368,8 +1477,9 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: prefix
-    en:
-    - "line segment a1 a2"
+    speech:
+      en:
+        - "line segment a1 a2"
     comments:
     - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>_</mo></mover></math>"
   
@@ -1378,8 +1488,9 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: prefix
-    en:
-    - "directed line segment a1 a2"
+    speech:
+      en:
+        - "directed line segment a1 a2"
     comments:
     - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
   
@@ -1388,8 +1499,9 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: prefix
-    en:
-    - "line a1 a2"
+    speech:
+      en:
+        - "line a1 a2"
     comments:
     - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>↔</mo></mover></math>"
   
@@ -1398,8 +1510,9 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: prefix
-    en:
-    - "ray a1 a2"
+    speech:
+      en:
+        - "ray a1 a2"
     comments:
     - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
   
@@ -1408,8 +1521,9 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: prefix
-    en:
-    - "arc a1 a2"
+    speech:
+      en:
+        - "arc a1 a2"
     comments:
     - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>⌒</mo></mover></math>"
   
@@ -1418,8 +1532,9 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en:
-    - "length of a1"
+    speech:
+      en:
+        - "length of a1"
     comments:
     - "It may be necessary to 'nest' the intent as shown here for the example:
       <math><mrow intent='length(line-segment($start, $end))'>
@@ -1440,8 +1555,9 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en:
-    - "area of a1"
+    speech:
+      en:
+        - "area of a1"
     comments:
     - "There are many notations. Here's one: 
         <math><mrow intent='area($a,$b,$c,$d)'><mo>[</mo><mi arg='a' mathvariant='normal'>A</mi><mi arg='b' mathvariant='normal'>B</mi><mi arg='c' mathvariant='normal'>C</mi><mi arg='d'  mathvariant='normal'>D</mi><mo>]</mo></mrow></math>"
@@ -1465,8 +1581,9 @@ concepts:
     arity: ">=1"
     arguments: [a1,...]
     property: ???
-    en:
-    - "point a1 [comma a2 ...]"
+    speech:
+      en:
+        - "point a1 [comma a2 ...]"
     comment:
     - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>)</mo></math>"
   
@@ -1475,8 +1592,9 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en:
-    - "volume of a1"
+    speech:
+      en:
+        - "volume of a1"
     comments:
     - "See comments for `length` and `volume` for examples of how this might be marked up"
   
@@ -1484,8 +1602,9 @@ concepts:
     subject-area: Fill in the blank
     arity: 0
     arguments: []
-    en:
-    - "blank"
+    speech:
+      en:
+        - "blank"
     comments:
     - "blanks can be represented in many ways in MathML. Some examples:"
     - "`<mi intent='blank'>__</mi>`"
@@ -1499,7 +1618,8 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: infix
-    en: a1 a2
+    speech:
+      en: a1 a2
     comments:
     - "separates hours and minutes and is typically silent"
     - "Example: 2:31"
@@ -1510,7 +1630,8 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en: "fenced-group of a1"
+    speech:
+      en: "fenced-group of a1"
     comments:
     - "this includes parens, brackets, and braces"
   
@@ -1519,14 +1640,16 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: function
-    en: "the pair a1 and a2"
+    speech:
+      en: "the pair a1 and a2"
   
   - concept: indexed-by
     subject-area: General Concepts
     arity: 2
     arguments: [a1,a2]
     property: infix
-    en: "a1 indexed by a2"
+    speech:
+      en: "a1 indexed by a2"
     comments:
     - "this is typically a subscript and might also be spoken as 'a1 sub a2'"
   
@@ -1535,7 +1658,8 @@ concepts:
     arity: 1
     arguments: [a1]
     property: postfix
-    en: "a1 highlighted"
+    speech:
+      en: "a1 highlighted"
     comments:
     - "this typically would be used inside of a larger expression and not on its own"
     - "this might be used with `<menclose notation='box'>` or similar. It might also be used with color changes, although may be done with CSS"
@@ -1546,7 +1670,8 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: infix
-    en: "a1 per a2"
+    speech:
+      en: "a1 per a2"
     comments:
     - "Typically used with units"
     - "Used with `mfrac` or `/`"
@@ -1556,7 +1681,8 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: function
-    en: "translation by a1 comma a2"
+    speech:
+      en: "translation by a1 comma a2"
     comments:
     - "Example: <math><msub><mi>T</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>)</mo></mrow></msub></math>"
     
@@ -1565,7 +1691,8 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: infix
-    en: "fraction 2 over x minus 1 with constraint x not equal to 1"
+    speech:
+      en: "fraction 2 over x minus 1 with constraint x not equal to 1"
     comments:
     - "Example: <math><mfrac><mn>2</mn><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>,</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#x2260;</mo><mn>1</mn></math>"
     
@@ -1574,7 +1701,8 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: infix
-    en: "a1 choose a2"
+    speech:
+      en: "a1 choose a2"
     comments:
     - "There are many notations used for the binomial coefficient. Here are some of them: 
       <math><mrow intent='binomial-coefficent($power, $term)'>
@@ -1606,7 +1734,8 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: function
-    en: "a2 permutation of a1"
+    speech:
+      en: "a2 permutation of a1"
     comments:
     - "There are many notations for this: some of them are 
         <math>
@@ -1637,7 +1766,8 @@ concepts:
     arity: ">=2"
     arguments: [a1,a2,...]
     property: function
-    en: "permutation cycle of a1 a2 ..."
+    speech:
+      en: "permutation cycle of a1 a2 ..."
     comments:
     - "A common notation for a permutation cycle is <math><mo>(</mo>
             <mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable>
@@ -1660,7 +1790,8 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: infix
-    en: "a1 with annotation a2"
+    speech:
+      en: "a1 with annotation a2"
     comments:
     - "used with `mover` or `munder`"
    
@@ -1670,7 +1801,8 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en: "fenced-group of a1"
+    speech:
+      en: "fenced-group of a1"
     comments:
     - "this includes parens, brackets, and braces"
   
@@ -1679,7 +1811,8 @@ concepts:
     arity: 2
     arguments: [a1,a2]
     property: function
-    en: "a1 which is a2"
+    speech:
+      en: "a1 which is a2"
     comments:
     - "used with `mover` or `munder`"
     - "Example: <math><munder><munder><mrow><msub><mi mathvariant='normal'>H</mi><mn>2</mn></msub><mi mathvariant='normal'>O</mi></mrow><mo>&#x23DF;</mo></munder><mtext>water</mtext></munder></math>"
@@ -1689,7 +1822,8 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en: "grouped a1 end-grouped"
+    speech:
+      en: "grouped a1 end-grouped"
     comments:
     - "used with `mover` or `munder`"
     - "Example: <math><munder><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>-</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><mo>&#x23DF;</mo></munder></math>"
@@ -1699,7 +1833,8 @@ concepts:
     arity: 1
     arguments: [a1]
     property: function
-    en: "repeating decimal a1"
+    speech:
+      en: "repeating decimal a1"
     comments:
     - "typically used in when there is a bar over the repeating part of a decimal or dots over the first and last digits."
     - "Example: <math><mfrac><mn>1</mn><mn>22</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>0</mn><mover><mn>45</mn><mo>_</mo></mover></math>"
