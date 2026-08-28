@@ -165,17 +165,8 @@ if c.link
 </p>
 </details>
 
-<p>AAA
-
 {% assign cpts = site.data.core.concepts | sort: "subject-area" %}
-
-</p>
-
-<p>BBB
-
 {% assign subjt = "" %}
-
-</p>
 
 <table style="width:100%">
 <thead>
@@ -192,7 +183,7 @@ if c.link
 <tbody>
 {%- for c in cpts -%}
 {%- if c.subject-area != subjt -%}
-{%- assign subjt = c.subject-area -%}}
+{%- assign subjt = c.subject-area -%}
 <tr><th colspan="6">{{subjt}}</th></tr>
 {%- endif -%}
 {%- assign clss = forloop.index| modulo:2 -%}
