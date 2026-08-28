@@ -236,7 +236,7 @@ if c.link
 <td>
 {{arityr}}<br/>
 [
-{%- for arg in c.arguments -%
+{%- for arg in c.arguments -%}
 {{arg}}
 {%- unless forloop.last -%},{% endunless -%}
 {%- endfor -%}
