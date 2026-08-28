@@ -1,7 +1,7 @@
 ## Defaults:
 ### - property infix => arity 2
 ### - property prefix => arity 1
-### - property suffix => arity 1(((((
+### - property suffix => arity 1
 ### - property set, number => arity 0
 
 
@@ -217,6 +217,7 @@ concepts:
   - concept: closed-open-interval
     subject-area: functions and inverses
     arity: 2
+    arguments: [a1,a2]
     property: function
     en: interval between $1 (included) and $2
     fr: intervalle ouvert à droite entre $1 et $2
@@ -224,6 +225,7 @@ concepts:
   - concept: open-closed-interval
     subject-area: functions and inverses
     arity: 2
+    arguments: [a1,a2]
     property: function
     en:  interval between $1 and $2, included
     fr: intervalle ouvert à gauche...
@@ -231,6 +233,7 @@ concepts:
   - concept: open-interval
     subject-area: functions and inverses
     arity: 2
+    arguments: [a1,a2]
     property: function
     en: open interval between $1 and $2
     fr: intervalle ouvert
@@ -238,6 +241,7 @@ concepts:
   - concept: closed-interval
     subject-area: functions and inverses
     arity: 2
+    arguments: [a1,a2]
     property: function
     en: closed interval between $1 and $2
     fr: intervalle fermé entre $1 et $2
@@ -245,6 +249,7 @@ concepts:
   - concept: inverse
     subject-area: functions and inverses
     arity: 1
+    arguments: [a1]
     property: function*
     en: inverse of $1
     comments:
@@ -253,12 +258,14 @@ concepts:
   - concept: inverse
     subject-area: functions and inverses
     arity: 1
+    arguments: [a1]
     property: postfix
     en: $1 inverse
   
   - concept: domain
     subject-area: functions and inverses
     arity: 1
+    arguments: [a1]
     property: function
     en: domain of $1
     fr: domaine de définition de $1
@@ -266,6 +273,7 @@ concepts:
   - concept: codomain
     subject-area: functions and inverses
     arity: 1
+    arguments: [a1]
     property: function
     en: codomain of $1
     fr: ensemble d'arrivée de $1
@@ -273,6 +281,7 @@ concepts:
   - concept: image
     subject-area: functions and inverses
     arity: 1
+    arguments: [a1]
     property: function*
     en: image of $1
     fr: image de $1
@@ -280,12 +289,14 @@ concepts:
   - concept: fraction
     subject-area: functions and inverses
     arity: 2
+    arguments: [a1,a2]
     property: function
     en: fraction $1 over $2 end fraction
   
   - concept: mixed-fraction
     subject-area: functions and inverses
     arity: 2
+    arguments: [a1,a2]
     property: function
     en: $1 and $2
     comments:
@@ -295,6 +306,7 @@ concepts:
   - concept: quotient
     subject-area: functions and inverses
     arity: 2
+    arguments: [a1,a2]
     property: function
     en: integer part of $1 divided by $2
     fr: quotient de $1 par $2
@@ -302,6 +314,7 @@ concepts:
   - concept: evaluated-at
     subject-area: functions and inverses
     arity: 2
+    arguments: [a1,a2]
     property: infix
     en: $1 evaluated-at $2
     comments:
@@ -321,6 +334,7 @@ concepts:
   - concept: remainder
     subject-area: functions and inverses
     arity: 2
+    arguments: [a1,a2]
     property: function
     en: the remainder of $1 divided by $2
     fr: reste de la divsion de $1 par $2
@@ -328,18 +342,21 @@ concepts:
   - concept: max
     subject-area: functions and inverses
     arity: ">=1"
+    arguments: [a1,...]
     property: function
     en: "max of $1, ..."
   
   - concept: min
     subject-area: functions and inverses
     arity: ">=1"
+    arguments: [a1,...]
     property: function
     en: "min of $1, ..."
   
   - concept: power
     subject-area: functions and inverses
     arity: 2
+    arguments: [a1,a2]
     property: infix
     conditions:
       - condition: "$2=2"
@@ -356,6 +373,7 @@ concepts:
   - concept: root
     subject-area: functions and inverses
     arity: 2
+    arguments: [a1,a2]
     property: function
     conditions:
       - condition: "$2=2"
@@ -370,6 +388,7 @@ concepts:
   - concept: greatest-common-divisor
     subject-area: functions and inverses
     arity: ">=2"
+    arguments: [a1,a2,...]
     property: function
     en: greatest common divisor of $1, $2, ...
     fr: plus grand commun diviseur de $1, $2, ...
@@ -377,6 +396,7 @@ concepts:
   - concept: least-common-multiple
     subject-area: functions and inverses
     arity: ">=2"
+    arguments: [a1,a2,...]
     property: function
     en: lest common multiple of  $1, $2, ...
     fr: plus grand commun diviseur de $1, $2, ...
@@ -384,12 +404,14 @@ concepts:
   - concept: least-common-denominator
     subject-area: functions and inverses
     arity: ">=2"
+    arguments: [a1,a2,...]
     property: function
     en: "least common denominator of $1, $2, ..."
 
   - concept: absolute-value
     subject-area: functions and inverses
     arity: 1
+    arguments: [a1]
     property: function
     en: absolute value of $1
     fr: valeur absolue de $1
@@ -398,6 +420,7 @@ concepts:
   - concept: complex-conjugate
     subject-area: functions and inverses
     arity: 1
+    arguments: [a1]
     property: function
     en: complex conjugate of $1
     fr: $1 conjugé
@@ -405,12 +428,14 @@ concepts:
   - concept: complex-arg
     subject-area: functions and inverses
     arity: 1
+    arguments: [a1]
     property: function
     en: arg of $1
   
   - concept: real-part
     subject-area: functions and inverses
     arity: 1
+    arguments: [a1]
     property: function
     en:
     - real part of $1
@@ -419,12 +444,14 @@ concepts:
   - concept: imaginary-part
     subject-area: functions and inverses
     arity: 1
+    arguments: [a1]
     property: function
     en: imaginary part of $1
   
   - concept: polar-coordinate
     subject-area: functions and inverses
     arity: 2
+    arguments: [a1,a2]
     property: function
     en: "polar coordinate $1 comma $2"
     comment:
@@ -434,6 +461,7 @@ concepts:
   - concept: spherical-coordinate
     subject-area: functions and inverses
     arity: 3
+    arguments: [a1,a2,a3]
     property: function
     en: "spherical coordinate $1 comma $2, comma $3"
     comment:
@@ -443,6 +471,7 @@ concepts:
   - concept: cartesian-coordinate
     subject-area: functions and inverses
     arity: ">=2"
+    arguments: [a1,a2,...]
     property: function
     en: "cartesian coordinate $1 comma $2 ..."
     comment:
@@ -451,6 +480,7 @@ concepts:
   - concept: coordinate
     subject-area: functions and inverses
     arity: ">=2"
+    arguments: [a1,a2,...]
     property: function
     en: "coordinate $1 comma $2 ..."
     comment:
@@ -460,18 +490,21 @@ concepts:
   - concept: floor
     subject-area: functions and inverses
     arity: 1
+    arguments: [a1]
     property: function
     en: floor of $1
   
   - concept: ceiling
     subject-area: functions and inverses
     arity: 1
+    arguments: [a1]
     property: function
     en: ceiling of $1
   
   - concept: round
     subject-area: functions and inverses
     arity: 1
+    arguments: [a1]
     property: function
     en: rounded-value of $1
     comments:
@@ -483,6 +516,7 @@ concepts:
   - concept: fractional-part
     subject-area: functions and inverses
     arity: 1
+    arguments: [a1]
     property: function
     en: fractional part of $1
   
@@ -490,6 +524,7 @@ concepts:
   - concept: definite-integral
     subject-area: calculus
     arity: 1
+    arguments: [a1]
     property: ???
     en: "integral over $1"
     comments:
@@ -498,6 +533,7 @@ concepts:
   - concept: definite-integral
     subject-area: calculus
     arity: 2
+    arguments: [a1,a2]
     property: ???
     en: "integral from $1 to $2"
     comments:
@@ -507,6 +543,7 @@ concepts:
   - concept: derivative
     subject-area: calculus
     arity: 3
+    arguments: [a1,a2,a3]
     property: ???
     en:
     - "(verbose) the $3 derivative of $1 with respect to $2"
@@ -538,6 +575,7 @@ concepts:
   - concept: partial-derivative
     subject-area: calculus
     arity: ">=3"
+    arguments: [a1,a2,a3,...]
     property: ???
     en:
     - "partial <sum $3+2i> $1 partial $2 <$3 if $3 != 1> [partial $4 <$5 if $5 != 1> ...]"
@@ -559,6 +597,7 @@ concepts:
   - concept: limit
     subject-area: calculus
     arity: 1
+    arguments: [a1]
     property: prefix
     en: "limit as $1"
     comments:
@@ -589,6 +628,7 @@ concepts:
   - concept: tends-to
     subject-area: calculus
     arity: 2
+    arguments: [a1,a2]
     property: infix
     en: "$1 tends to $2"
     comments:
@@ -597,6 +637,7 @@ concepts:
   - concept: tends-to-from-above
     subject-area: calculus
     arity: 2
+    arguments: [a1,a2]
     property: infix
     en: "$1 tends to from above $2"
     comments:
@@ -605,6 +646,7 @@ concepts:
   - concept: tends-to-from-below
     subject-area: calculus
     arity: 2
+    arguments: [a1,a2]
     property: infix
     en: "$1 tends to from below $2"
     comments:
@@ -614,6 +656,7 @@ concepts:
   - concept: set
     subject-area: sets
     arity: 1
+    arguments: [a1]
     property: function
     en: "set of $1"
     comments:
@@ -641,6 +684,7 @@ concepts:
   - concept: set-difference
     subject-area: sets
     arity: 2
+    arguments: [a1,a2]
     property: function
     en: "set difference of $1 and $2"
     comments:
@@ -651,6 +695,7 @@ concepts:
   - concept: set-difference
     subject-area: sets
     arity: 2
+    arguments: [a1,a2]
     property: infix
     en: "\"$1 minus $2\" or \"$2 subtracted from $1\""
     comments:
@@ -660,6 +705,7 @@ concepts:
   - concept: complement
     subject-area: sets
     arity: 1
+    arguments: [a1]
     property: function
     en: "complement of $1"
     comments:
@@ -670,6 +716,7 @@ concepts:
   - concept: empty-set
     subject-area: sets
     arity: 0
+    arguments: []
     en: "empty set"
     comments:
     - "Three notations used for empty set are: { }, ∅, and ∅"
@@ -678,6 +725,7 @@ concepts:
   - concept: cardinality
     subject-area: sets
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - "often used with matchfix single vertical bars"
@@ -685,17 +733,20 @@ concepts:
   - concept: list
     subject-area: sets
     arity: ">=0"
+    arguments: [a1,...]
     en: "list of $1, ..."
   
   - concept: tuple
     subject-area: sets
     arity: ">=0"
+    arguments: [a1,...]
     en: "tuple of $1, ..."
   
   ## ====================== 4.4.6 sequence and series ============================
   - concept: sum
     subject-area: sequences and series
     arity: 1
+    arguments: [a1]
     property: function
     en: "sum of $1"
     comments:
@@ -704,6 +755,7 @@ concepts:
   - concept: sum
     subject-area: sequences and series
     arity: 2
+    arguments: [a1,a2]
     property: function
     en: "sum over $1 of $2"
     comments:
@@ -712,6 +764,7 @@ concepts:
   - concept: sum
     subject-area: sequences and series
     arity: 3
+    arguments: [a1,a2,a3]
     property: function
     en: "sum from $1 to $2 of $3"
     comments:
@@ -720,6 +773,7 @@ concepts:
   - concept: product
     subject-area: sequences and series
     arity: 1
+    arguments: [a1]
     property: function
     en: "product of $1"
     comments:
@@ -728,6 +782,7 @@ concepts:
   - concept: product
     subject-area: sequences and series
     arity: 2
+    arguments: [a1,a2]
     property: function
     en: "product over $1 of $2"
     comments:
@@ -736,6 +791,7 @@ concepts:
   - concept: product
     subject-area: sequences and series
     arity: 3
+    arguments: [a1,a2,a3]
     property: function
     en: "product from $1 to $2 of $3"
     comments:
@@ -746,6 +802,7 @@ concepts:
   - concept: sine
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     en: "sine $1"
     fr: "sinus $1"
@@ -755,6 +812,7 @@ concepts:
   - concept: cosine
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     en:
     - "(verbose) cosine $1"
@@ -763,6 +821,7 @@ concepts:
   - concept: tangent
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     en:
     - "(verbose) tangent $1"
@@ -773,6 +832,7 @@ concepts:
   - concept: secant
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     en:
     - "(verbose) secant $1"
@@ -783,6 +843,7 @@ concepts:
   - concept: cosecant
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     en:
     - "(verbose) cosecant $1"
@@ -793,6 +854,7 @@ concepts:
   - concept: cotangent
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     en:
     - "(verbose) cotangent $1"
@@ -805,6 +867,7 @@ concepts:
   - concept: arcsine
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     en:
     - "(verbose) arcsine $1"
@@ -815,6 +878,7 @@ concepts:
   - concept: arccosine
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     en:
     - "(verbose) arccosine $1"
@@ -824,6 +888,7 @@ concepts:
   - concept: arctangent
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     en:
     - "(verbose) arctangent $1"
@@ -833,6 +898,7 @@ concepts:
   - concept: arcsecant
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     en:
     - "(verbose) arcsecant $1"
@@ -842,6 +908,7 @@ concepts:
   - concept: arccosecant
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     en:
     - "(verbose) arc-cosecant $1"
@@ -851,6 +918,7 @@ concepts:
   - concept: arccotangent
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     en:
     - "(verbose) arc-cotangent $1"
@@ -861,6 +929,7 @@ concepts:
   - concept: hyperbolic-sine
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
@@ -874,6 +943,7 @@ concepts:
   - concept: hyperbolic-cosine
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
@@ -887,6 +957,7 @@ concepts:
   - concept: hyperbolic-tangent
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
@@ -898,6 +969,7 @@ concepts:
   - concept: hyperbolic-secant
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
@@ -909,6 +981,7 @@ concepts:
   - concept: hyperbolic-cosecant
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
@@ -921,6 +994,7 @@ concepts:
   - concept: hyperbolic-cotangent
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
@@ -935,6 +1009,7 @@ concepts:
   - concept: arc-hyperbolic-sine
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - "used as 'asinh'"
@@ -947,6 +1022,7 @@ concepts:
   - concept: arc-hyperbolic-cosine
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - "used as 'acosh'"
@@ -959,6 +1035,7 @@ concepts:
   - concept: arc-hyperbolic-tangent
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - "used as 'atanh'"
@@ -969,6 +1046,7 @@ concepts:
   - concept: arc-hyperbolic-secant
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - "used as 'asech'"
@@ -979,6 +1057,7 @@ concepts:
   - concept: arc-hyperbolic-cosecant
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - "used as 'acsch'"
@@ -990,6 +1069,7 @@ concepts:
   - concept: arc-hyperbolic-cotangent
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - "used as 'acoth'"
@@ -1002,6 +1082,7 @@ concepts:
   - concept: exponential
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     en:
       - "exponential of $1"
@@ -1009,6 +1090,7 @@ concepts:
   - concept: natural-logarithm
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     en:
       - "natural log of $1"
@@ -1017,12 +1099,14 @@ concepts:
   - concept: logarithm
     subject-area: elementary classical functions
     arity: 1
+    arguments: [a1]
     property: function
     en: "log of $1"
   
   - concept: logarithm
     subject-area: elementary classical functions
     arity: 2
+    arguments: [a1,a2]
     property: function
     en: "log base $2 of $1"
   
@@ -1033,6 +1117,7 @@ concepts:
   - concept: mean
     subject-area: Statistics and Probability
     arity: 1
+    arguments: [a1]
     property: function
     en: "mean of $1"
     comments:
@@ -1041,24 +1126,28 @@ concepts:
   - concept: standard-deviation
     subject-area: Statistics and Probability
     arity: 1
+    arguments: [a1]
     property: function
     en: "standard deviation of $1"
   
   - concept: variance
     subject-area: Statistics and Probability
     arity: 1
+    arguments: [a1]
     property: function
     en: "variance of $1"
   
   - concept: median
     subject-area: Statistics and Probability
     arity: 1
+    arguments: [a1]
     property: function
     en: "median of $1"
   
   - concept: mode
     subject-area: Statistics and Probability
     arity: 1
+    arguments: [a1]
     property: function
     en: "mode of $1"
   
@@ -1067,6 +1156,7 @@ concepts:
   - concept: conditional-probability
     subject-area: Statistics and Probability
     arity: 2
+    arguments: [a1,a2]
     property: function
     en: "probability of $1 given $2"
     comments:
@@ -1092,11 +1182,13 @@ concepts:
   - concept: vector
     subject-area: Linear Algebra
     arity: 1
+    arguments: [a1]
     property: function
   
   - concept: matrix
     subject-area: Linear Algebra
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
@@ -1104,6 +1196,7 @@ concepts:
   - concept: determinant
     subject-area: Linear Algebra
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
@@ -1111,6 +1204,7 @@ concepts:
   - concept: adjugate
     subject-area: Linear Algebra
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - "sometimes used when computing an inverse matrix"
@@ -1118,6 +1212,7 @@ concepts:
   - concept: magnitude
     subject-area: Linear Algebra
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - "often used with matchfix single or double vertical bars"
@@ -1125,6 +1220,7 @@ concepts:
   - concept: norm
     subject-area: Linear Algebra
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - "often used with matchfix double vertical bars"
@@ -1132,6 +1228,7 @@ concepts:
   - concept: span
     subject-area: Linear Algebra
     arity: 1
+    arguments: [a1]
     property: function
     comments:
     - "often used with matchfix angle brackets"
@@ -1139,6 +1236,7 @@ concepts:
   - concept: unit-vector
     subject-area: Linear Algebra
     arity: 1
+    arguments: [a1]
     property: prefix
     comments:
     - "Example: <math><mover><mi>x</mi><mo>^</mo></mover></math>"
@@ -1147,6 +1245,7 @@ concepts:
   - concept: identity-matrix
     subject-area: Linear Algebra
     arity: 0
+    arguments: []
     comments:
     - "This is typically represented as 'I' or bold-faced '𝐈'"
     en: "identity matrix"
@@ -1154,6 +1253,7 @@ concepts:
   - concept: transpose
     subject-area: Linear Algebra
     arity: 1
+    arguments: [a1]
     property: postfix
     en: "$1 transpose"
     fr: "$1 transposée"
@@ -1161,6 +1261,7 @@ concepts:
   - concept: transpose
     subject-area: Linear Algebra
     arity: 1
+    arguments: [a1]
     property: function
     default: false
     en: "transpose of $1"
@@ -1169,6 +1270,7 @@ concepts:
   - concept: dimensional-product
     subject-area: Linear Algebra
     arity: ">=2"
+    arguments: [a1,a2,...]
     property: infix
     default: false
     en: "$1 by $2 ..."
@@ -1181,6 +1283,7 @@ concepts:
   - concept: set-of-integers
     subject-area: Constants and Sets
     arity: 0
+    arguments: []
     en:
     - "(verbose) set of all integers"
     - "(terse) Z"
@@ -1189,6 +1292,7 @@ concepts:
   - concept: set-of-reals
     subject-area: Constants and Sets
     arity: 0
+    arguments: []
     en:
     - "(verbose) set of all real numbers"
     - "(terse) R"
@@ -1196,6 +1300,7 @@ concepts:
   - concept: set-of-rationals
     subject-area: Constants and Sets
     arity: 0
+    arguments: []
     en:
     - "(verbose) set of all rational numbers"
     - "(terse) R"
@@ -1203,6 +1308,7 @@ concepts:
   - concept: set-of-natural-numbers
     subject-area: Constants and Sets
     arity: 0
+    arguments: []
     en:
     - "(verbose) set of all natural numbers"
     - "(terse) N"
@@ -1210,6 +1316,7 @@ concepts:
   - concept: set-of-complex-numbers
     subject-area: Constants and Sets
     arity: 0
+    arguments: []
     en:
     - "(verbose) set of all complex numbers"
     - "(terse) C"
@@ -1217,6 +1324,7 @@ concepts:
   - concept: set-of-primes
     subject-area: Constants and Sets
     arity: 0
+    arguments: []
     en:
     - "(verbose) set of all prime numbers"
     - "(terse) P"
@@ -1224,24 +1332,28 @@ concepts:
   - concept: exponential-e
     subject-area: Constants and Sets
     arity: 0
+    arguments: []
     en: "e"
     fr: "e"
   
   - concept: imaginary-i
     subject-area: Constants and Sets
     arity: 0
+    arguments: []
     en: "i"
     fr: "i"
   
   - concept: differential-d
     subject-area: Constants and Sets
     arity: 0
+    arguments: []
     en: "d"
     fr: "d"
   
   - concept: golden-ratio
     subject-area: Constants and Sets
     arity: 0
+    arguments: []
     en: "golden ratio"
     fr: "d"
     comments:
@@ -1254,6 +1366,7 @@ concepts:
   - concept: line-segment
     subject-area: Geometry
     arity: 2
+    arguments: [a1,a2]
     property: prefix
     en:
     - "line segment $1 $2"
@@ -1263,6 +1376,7 @@ concepts:
   - concept: directed-line-segment
     subject-area: Geometry
     arity: 2
+    arguments: [a1,a2]
     property: prefix
     en:
     - "directed line segment $1 $2"
@@ -1272,6 +1386,7 @@ concepts:
   - concept: line
     subject-area: Geometry
     arity: 2
+    arguments: [a1,a2]
     property: prefix
     en:
     - "line $1 $2"
@@ -1281,6 +1396,7 @@ concepts:
   - concept: ray
     subject-area: Geometry
     arity: 2
+    arguments: [a1,a2]
     property: prefix
     en:
     - "ray $1 $2"
@@ -1290,6 +1406,7 @@ concepts:
   - concept: arc
     subject-area: Geometry
     arity: 2
+    arguments: [a1,a2]
     property: prefix
     en:
     - "arc $1 $2"
@@ -1299,6 +1416,7 @@ concepts:
   - concept: length
     subject-area: Geometry
     arity: 1
+    arguments: [a1]
     property: function
     en:
     - "length of $1"
@@ -1320,6 +1438,7 @@ concepts:
   - concept: area
     subject-area: Geometry
     arity: 1
+    arguments: [a1]
     property: function
     en:
     - "area of $1"
@@ -1344,6 +1463,7 @@ concepts:
   - concept: point
     subject-area: Geometry
     arity: ">=1"
+    arguments: [a1,...]
     property: ???
     en:
     - "point $1 [comma $2 ...]"
@@ -1353,6 +1473,7 @@ concepts:
   - concept: volume
     subject-area: Geometry
     arity: 1
+    arguments: [a1]
     property: function
     en:
     - "volume of $1"
@@ -1362,6 +1483,7 @@ concepts:
   - concept: blank
     subject-area: Fill in the blank
     arity: 0
+    arguments: []
     en:
     - "blank"
     comments:
@@ -1375,6 +1497,7 @@ concepts:
   - concept: time-separator
     subject-area: Separators
     arity: 2
+    arguments: [a1,a2]
     property: infix
     en: $1 $2
     comments:
@@ -1385,6 +1508,7 @@ concepts:
   - concept: fenced-group
     subject-area: General Concepts
     arity: 1
+    arguments: [a1]
     property: function
     en: "fenced-group of $1"
     comments:
@@ -1393,12 +1517,14 @@ concepts:
   - concept: ordered-pair
     subject-area: General Concepts
     arity: 2
+    arguments: [a1,a2]
     property: function
     en: "the pair $1 and $2"
   
   - concept: indexed-by
     subject-area: General Concepts
     arity: 2
+    arguments: [a1,a2]
     property: infix
     en: "$1 indexed by $2"
     comments:
@@ -1407,6 +1533,7 @@ concepts:
   - concept: highlight
     subject-area: General Concepts
     arity: 1
+    arguments: [a1]
     property: postfix
     en: "$1 highlighted"
     comments:
@@ -1417,6 +1544,7 @@ concepts:
   - concept: rate
     subject-area: General Concepts
     arity: 2
+    arguments: [a1,a2]
     property: infix
     en: "$1 per $2"
     comments:
@@ -1426,6 +1554,7 @@ concepts:
   - concept: translation
     subject-area: General Concepts
     arity: 2
+    arguments: [a1,a2]
     property: function
     en: "translation by $1 comma $2"
     comments:
@@ -1434,6 +1563,7 @@ concepts:
   - concept: constraint
     subject-area: General Concepts
     arity: 2
+    arguments: [a1,a2]
     property: infix
     en: "fraction 2 over x minus 1 with constraint x not equal to 1"
     comments:
@@ -1442,6 +1572,7 @@ concepts:
   - concept: binomial-coefficient
     subject-area: General Concepts
     arity: 2
+    arguments: [a1,a2]
     property: infix
     en: "$1 choose $2"
     comments:
@@ -1473,6 +1604,7 @@ concepts:
   - concept: pochhammer
     subject-area: General Concepts
     arity: 2
+    arguments: [a1,a2]
     property: function
     en: "$2 permutation of $1"
     comments:
@@ -1503,6 +1635,7 @@ concepts:
   - concept: permutation-cycle
     subject-area: General Concepts
     arity: ">=2"
+    arguments: [a1,a2,...]
     property: function
     en: "permutation cycle of $1 $2 ..."
     comments:
@@ -1525,6 +1658,7 @@ concepts:
   - concept: embellished-name
     subject-area: General Concepts
     arity: 2
+    arguments: [a1,a2]
     property: infix
     en: "$1 with annotation $2"
     comments:
@@ -1534,6 +1668,7 @@ concepts:
   - concept: fenced-group
     subject-area: Grouping
     arity: 1
+    arguments: [a1]
     property: function
     en: "fenced-group of $1"
     comments:
@@ -1542,6 +1677,7 @@ concepts:
   - concept: annotation
     subject-area: Grouping
     arity: 2
+    arguments: [a1,a2]
     property: function
     en: "$1 which is $2"
     comments:
@@ -1551,6 +1687,7 @@ concepts:
   - concept: braced-group
     subject-area: Grouping
     arity: 1
+    arguments: [a1]
     property: function
     en: "grouped $1 end-grouped"
     comments:
@@ -1560,6 +1697,7 @@ concepts:
   - concept: repeating-decimal
     subject-area: Grouping
     arity: 1
+    arguments: [a1]
     property: function
     en: "repeating decimal $1"
     comments:
