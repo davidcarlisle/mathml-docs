@@ -258,7 +258,7 @@ concepts:
     speech:
       en: inverse of a1
     comments:
-    - "`inverse` can be used for function inverses, matrix inverses, etc."
+      - "`inverse` can be used for function inverses, matrix inverses, etc."
   
   - concept: inverse
     subject-area: functions and inverses
@@ -311,8 +311,8 @@ concepts:
     speech:
       en: a1 and a2
     comments:
-    - "a1 is a positive integer and a2 is a fraction with positive numerical components.
-      The second argument can be an `mfrac` (normal or beveled) or can be a linear fraction using `/`"
+      - "a1 is a positive integer and a2 is a fraction with positive numerical components.
+        The second argument can be an `mfrac` (normal or beveled) or can be a linear fraction using `/`"
   
   - concept: quotient
     subject-area: functions and inverses
@@ -331,19 +331,19 @@ concepts:
     speech:
       en: a1 evaluated-at a2
     comments:
-    - "Two common notations are
-      <math><mrow><msub><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>|</mo></mrow></mrow><mn>3</mn></msub></mrow></math>
-      and
-      <math>
-        <msub>
-            <mrow>
-                <msup><mi>x</mi><mn>2</mn></msup>
-                <mo>|</mo>
-            </mrow>
-            <mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow>
-        </msub>
-      </math>
-      "
+      - "Two common notations are
+        <math><mrow><msub><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>|</mo></mrow></mrow><mn>3</mn></msub></mrow></math>
+        and
+        <math>
+          <msub>
+              <mrow>
+                  <msup><mi>x</mi><mn>2</mn></msup>
+                  <mo>|</mo>
+              </mrow>
+              <mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow>
+          </msub>
+        </math>
+        "
   - concept: remainder
     subject-area: functions and inverses
     arity: 2
@@ -546,10 +546,10 @@ concepts:
     speech:
       en: rounded-value of a1
     comments:
-    - "This sometimes uses the notation
-      <math><mo>&#x230A;</mo><mi>x</mi><mo>&#x2309;</mo></math>
-      or
-      <math><mo>[</mo><mi>x</mi><mo>]</mo></math>"
+      - "This sometimes uses the notation
+        <math><mo>&#x230A;</mo><mi>x</mi><mo>&#x2309;</mo></math>
+        or
+        <math><mo>[</mo><mi>x</mi><mo>]</mo></math>"
   
   - concept: fractional-part
     subject-area: functions and inverses
@@ -568,7 +568,7 @@ concepts:
     speech:
       en: "integral over a1"
     comments:
-    - "integral sign is not an argument"
+      - "integral sign is not an argument"
   
   - concept: definite-integral
     subject-area: calculus
@@ -578,7 +578,7 @@ concepts:
     speech:
       en: "integral from a1 to a2"
     comments:
-    - "integral sign is not an argument"
+      - "integral sign is not an argument"
   
   
   - concept: derivative
@@ -591,27 +591,27 @@ concepts:
         - "(verbose) the a3 derivative of a1 with respect to a2"
         - "(terse) d <a3 if a3 != 1> a1 by d a2 <a3 if a3 != 1>"
     comments:
-    - "the terse reading only makes sense for Leibniz notation such as 
-        <math><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>y</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></math>
-        or
-        <math><mfrac><msup><mi>d</mi><mn>2</mn></msup><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>.
-        It does not make sense for other notations such as 
-        <math><msup><mi>f</mi><mo>''</mo></msup><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>
-        "
-    - "The first of these examples might be marked up as"
-    - |
-        ```
-        <mfrac intent='derivative(y, x, 2)'>
-          <mrow>
-            <msup><mi>d</mi><mn arg>2</mn></msup>
-            <mi>y</mi>
-          </mrow>
-          <mrow>
-            <mi>d</mi>
-            <msup><mi>x</mi><mn>2</mn></msup>
-          </mrow>
-        </mfrac>
-        ```
+      - "the terse reading only makes sense for Leibniz notation such as 
+          <math><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>y</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></math>
+          or
+          <math><mfrac><msup><mi>d</mi><mn>2</mn></msup><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>.
+          It does not make sense for other notations such as 
+          <math><msup><mi>f</mi><mo>''</mo></msup><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>
+          "
+      - "The first of these examples might be marked up as"
+      - |
+          ```
+          <mfrac intent='derivative(y, x, 2)'>
+            <mrow>
+              <msup><mi>d</mi><mn arg>2</mn></msup>
+              <mi>y</mi>
+            </mrow>
+            <mrow>
+              <mi>d</mi>
+              <msup><mi>x</mi><mn>2</mn></msup>
+            </mrow>
+          </mfrac>
+          ```
   
   
   - concept: partial-derivative
@@ -623,19 +623,19 @@ concepts:
       en:
         - "partial <sum a3+2i> a1 partial a2 <a3 if a3 != 1> [partial a4 <a5 if a5 != 1> ...]"
     comments:
-    - |
-      ```
-      <mfrac intent='partial-derivative($f, x, 2, y, 1)'>
-        <mrow>
-            <msup><mo>&#x2202;</mo><mn>3</mn></msup>
-            <mrow arg='f'><mi>sin</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>y</mi></mrow>
-        </mrow>
-        <mrow>
-            <msup><mo>&#x2202;</mo><mn>2</mn></msup>
-            <mi>x</mi><mo>&#x2202;</mo><mi>y</mi>
-        </mrow>
-      </mfrac>
-      ```
+      - |
+        ```
+        <mfrac intent='partial-derivative($f, x, 2, y, 1)'>
+          <mrow>
+              <msup><mo>&#x2202;</mo><mn>3</mn></msup>
+              <mrow arg='f'><mi>sin</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>y</mi></mrow>
+          </mrow>
+          <mrow>
+              <msup><mo>&#x2202;</mo><mn>2</mn></msup>
+              <mi>x</mi><mo>&#x2202;</mo><mi>y</mi>
+          </mrow>
+        </mfrac>
+        ```
   
   - concept: limit
     subject-area: calculus
@@ -645,29 +645,29 @@ concepts:
     speech:
       en: "limit as a1"
     comments:
-    - "limit is not an argument, but intent should be on `msub` or `munder`"
-    - "There are several arrows used for limits. "
-    - "Example: <math>
-            <munder intent='limit($lim)'>
-                <mi>lim</mi>
-                <mrow arg='lim' intent='tends-to-from-below($x, $val)'><mi arg='x'>x</mi><mo>↗</mo><mn arg='val'>0</mn></mrow>
-            </munder>
-        </math>
-        might be spoken as \"limit as x tends to from below 0\" and marked up as:"
-    - |
-      ```
-      <munder intent='limit($lim)'>
-          <mi>lim</mi>
-          <mrow arg='lim' intent='tends-to-from-below($x, $val)''>
-            <mi arg='x'>x</mi>
-            <mo>↗</mo>
-            <mn arg='val'>0</mn>
-          </mrow>
-      </munder>
-      ```
-    - "Another notation that might be spoken similarly is
-      <math><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></munder></math>
-      "
+      - "limit is not an argument, but intent should be on `msub` or `munder`"
+      - "There are several arrows used for limits. "
+      - "Example: <math>
+              <munder intent='limit($lim)'>
+                  <mi>lim</mi>
+                  <mrow arg='lim' intent='tends-to-from-below($x, $val)'><mi arg='x'>x</mi><mo>↗</mo><mn arg='val'>0</mn></mrow>
+              </munder>
+          </math>
+          might be spoken as \"limit as x tends to from below 0\" and marked up as:"
+      - |
+        ```
+        <munder intent='limit($lim)'>
+            <mi>lim</mi>
+            <mrow arg='lim' intent='tends-to-from-below($x, $val)''>
+              <mi arg='x'>x</mi>
+              <mo>↗</mo>
+              <mn arg='val'>0</mn>
+            </mrow>
+        </munder>
+        ```
+      - "Another notation that might be spoken similarly is
+        <math><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></munder></math>
+        "
   
   - concept: tends-to
     subject-area: calculus
@@ -677,7 +677,7 @@ concepts:
     speech:
       en: "a1 tends to a2"
     comments:
-    - "see \"limit\" example"
+      - "see \"limit\" example"
   
   - concept: tends-to-from-above
     subject-area: calculus
@@ -687,7 +687,7 @@ concepts:
     speech:
       en: "a1 tends to from above a2"
     comments:
-    - "see \"limit\" example"
+      - "see \"limit\" example"
   
   - concept: tends-to-from-below
     subject-area: calculus
@@ -697,7 +697,7 @@ concepts:
     speech:
       en: "a1 tends to from below a2"
     comments:
-    - "see \"limit\" example"
+      - "see \"limit\" example"
   
   ## ====================== 4.4.5 Sets ============================
   - concept: set
@@ -708,26 +708,26 @@ concepts:
     speech:
       en: "set of a1"
     comments:
-    - |
-             the argument to `set` is typically an `mrow`. For example:
-  
-             ```
-             <math>
-              <mrow intent='set($members)'>
-               <mo>{</mo>
-               <mrow arg='members'>
-                <mn>2</mn>
-                <mo>,</mo>
-                <mn>4</mn>
-                <mo>,</mo>
-                <mn>6</mn>
-                <mo>,</mo>
-                <mn>8</mn>
-               </mrow>
-               <mo>}</mo>
-              </mrow>
-             </math>
-             ```
+      - |
+               the argument to `set` is typically an `mrow`. For example:
+    
+               ```
+               <math>
+                <mrow intent='set($members)'>
+                 <mo>{</mo>
+                 <mrow arg='members'>
+                  <mn>2</mn>
+                  <mo>,</mo>
+                  <mn>4</mn>
+                  <mo>,</mo>
+                  <mn>6</mn>
+                  <mo>,</mo>
+                  <mn>8</mn>
+                 </mrow>
+                 <mo>}</mo>
+                </mrow>
+               </math>
+               ```
   
   - concept: set-difference
     subject-area: sets
@@ -737,9 +737,9 @@ concepts:
     speech:
       en: "set difference of a1 and a2"
     comments:
-    - "This can be spoken in many ways. See other entry for infix speech."
-    - "There are several notations that are used and their order of appearance differs:
-      <math><mi>A</mi><mo>-</mo><mi>B</mi></math>, <math><mi>A</mi><mo>\\</mo><mi>B</mi></math>"
+      - "This can be spoken in many ways. See other entry for infix speech."
+      - "There are several notations that are used and their order of appearance differs:
+        <math><mi>A</mi><mo>-</mo><mi>B</mi></math>, <math><mi>A</mi><mo>\\</mo><mi>B</mi></math>"
   
   - concept: set-difference
     subject-area: sets
@@ -749,8 +749,8 @@ concepts:
     speech:
       en: "\"a1 minus a2\" or \"a2 subtracted from a1\""
     comments:
-    - "This can be spoken in many ways. See other entry for functional speech."
-    - "See functional form for some notational usages."
+      - "This can be spoken in many ways. See other entry for functional speech."
+      - "See functional form for some notational usages."
   
   - concept: complement
     subject-area: sets
@@ -760,9 +760,9 @@ concepts:
     speech:
       en: "complement of a1"
     comments:
-    - "This can be spoken in many ways. See other entry for functional speech."
-    - "Two notations used for complement are: 
-      <math><msup><mi>A</mi><mi>C</mi></msup></math>, <math><msup><mi>A</mi><mo>'</mo></msup></math>"
+      - "This can be spoken in many ways. See other entry for functional speech."
+      - "Two notations used for complement are: 
+        <math><msup><mi>A</mi><mi>C</mi></msup></math>, <math><msup><mi>A</mi><mo>'</mo></msup></math>"
   
   - concept: empty-set
     subject-area: sets
@@ -771,7 +771,7 @@ concepts:
     speech:
       en: "empty set"
     comments:
-    - "Three notations used for empty set are: { }, ∅, and ∅"
+      - "Three notations used for empty set are: { }, ∅, and ∅"
   
   
   - concept: cardinality
@@ -780,7 +780,7 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - "often used with matchfix single vertical bars"
+      - "often used with matchfix single vertical bars"
   
   - concept: list
     subject-area: sets
@@ -805,7 +805,7 @@ concepts:
     speech:
       en: "sum of a1"
     comments:
-    - usually on `<mrow>`
+      - usually on `<mrow>`
   
   - concept: sum
     subject-area: sequences and series
@@ -815,7 +815,7 @@ concepts:
     speech:
       en: "sum over a1 of a2"
     comments:
-    - usually on `<munder>` or `<msub>`
+      - usually on `<munder>` or `<msub>`
   
   - concept: sum
     subject-area: sequences and series
@@ -825,7 +825,7 @@ concepts:
     speech:
       en: "sum from a1 to a2 of a3"
     comments:
-    - usually on `<munderover>` or `<msubsup>`
+      - usually on `<munderover>` or `<msubsup>`
   
   - concept: product
     subject-area: sequences and series
@@ -835,7 +835,7 @@ concepts:
     speech:
       en: "product of a1"
     comments:
-    - usually on `<mrow>`
+      - usually on `<mrow>`
       
   - concept: product
     subject-area: sequences and series
@@ -845,7 +845,7 @@ concepts:
     speech:
       en: "product over a1 of a2"
     comments:
-    - usually on `<munder>` or `<msub>`
+      - usually on `<munder>` or `<msub>`
   
   - concept: product
     subject-area: sequences and series
@@ -855,7 +855,7 @@ concepts:
     speech:
       en: "product from a1 to a2 of a3"
     comments:
-    - usually on `<munderover>` or `<msubsup>`
+      - usually on `<munderover>` or `<msubsup>`
   
   
   ## ====================== 4.4.7 elementary classical functions ======================
@@ -868,7 +868,7 @@ concepts:
       en: "sine a1"
       fr: "sinus a1"
     comments:
-    - used as 'sin', 'sen'
+      - used as 'sin', 'sen'
   
   - concept: cosine
     subject-area: elementary classical functions
@@ -890,7 +890,7 @@ concepts:
         - "(verbose) tangent a1"
         - "(terse) tan a1"
     comments:
-    - used as 'tan', 'tg'
+      - used as 'tan', 'tg'
   
   - concept: secant
     subject-area: elementary classical functions
@@ -902,7 +902,7 @@ concepts:
         - "(verbose) secant a1"
         - "(terse) seech a1"
     comments:
-    - used as 'sec'
+      - used as 'sec'
   
   - concept: cosecant
     subject-area: elementary classical functions
@@ -914,7 +914,7 @@ concepts:
         - "(verbose) cosecant a1"
         - "(terse) co-seech a1"
     comments:
-    - used as 'csc'
+      - used as 'csc'
   
   - concept: cotangent
     subject-area: elementary classical functions
@@ -926,7 +926,7 @@ concepts:
         - "(verbose) cotangent a1"
         - "(terse) co-tan a1"
     comments:
-    - used as 'cot'
+      - used as 'cot'
   
   
   ## inverse trig functions
@@ -939,8 +939,8 @@ concepts:
       en:
         - "(verbose) arcsine a1"
     comments:
-    - "used as 'arcsin', 'arc sin'"
-    - "this is distinct from sin inverse (<math><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>)"
+      - "used as 'arcsin', 'arc sin'"
+      - "this is distinct from sin inverse (<math><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>)"
   
   - concept: arccosine
     subject-area: elementary classical functions
@@ -951,7 +951,7 @@ concepts:
       en:
         - "(verbose) arccosine a1"
     comments:
-    - "used as 'arccos', 'arc cos'"
+      - "used as 'arccos', 'arc cos'"
   
   - concept: arctangent
     subject-area: elementary classical functions
@@ -962,7 +962,7 @@ concepts:
       en:
         - "(verbose) arctangent a1"
     comments:
-    - "used as 'arctan', 'arc tan'"
+      - "used as 'arctan', 'arc tan'"
   
   - concept: arcsecant
     subject-area: elementary classical functions
@@ -973,7 +973,7 @@ concepts:
       en:
         - "(verbose) arcsecant a1"
     comments:
-    - "used as 'arcsec', 'arc sec'"
+      - "used as 'arcsec', 'arc sec'"
   
   - concept: arccosecant
     subject-area: elementary classical functions
@@ -984,7 +984,7 @@ concepts:
       en:
         - "(verbose) arc-cosecant a1"
     comments:
-    - "used as 'arccos', 'arc cos'"
+      - "used as 'arccos', 'arc cos'"
   
   - concept: arccotangent
     subject-area: elementary classical functions
@@ -995,7 +995,7 @@ concepts:
       en:
         - "(verbose) arc-cotangent a1"
     comments:
-    - "used as 'arccos', 'arc cos'"
+      - "used as 'arccos', 'arc cos'"
   
   ## hyperbolic trig functions
   - concept: hyperbolic-sine
@@ -1004,8 +1004,8 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
-    - "used as 'sinh'"
+      - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+      - "used as 'sinh'"
     speech:
       en:
         - "short form 'shine a1'"
@@ -1019,8 +1019,8 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
-    - "used as 'cosh'"
+      - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+      - "used as 'cosh'"
     speech:
       en:
       - "short form 'cosh a1'"
@@ -1034,8 +1034,8 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
-    - "used as 'tanh'"
+      - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+      - "used as 'tanh'"
     speech:
       en:
         - "short form American 'tanch a1'"
@@ -1047,8 +1047,8 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
-    - "used as 'sech'"
+      - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+      - "used as 'sech'"
     speech:
       en:
         - "short form American 'sech a1'"
@@ -1060,8 +1060,8 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
-    - "used as 'cosech'"
+      - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+      - "used as 'cosech'"
     speech:
       en:
         - "short form American 'cosech a1'"
@@ -1074,8 +1074,8 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
-    - "used as 'coth'"
+      - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+      - "used as 'coth'"
     speech:
       en:
         - "short form American 'coth a1'"
@@ -1090,7 +1090,7 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - "used as 'asinh'"
+      - "used as 'asinh'"
     speech:
       en:
         - "short form 'arc shine a1'"
@@ -1104,7 +1104,7 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - "used as 'acosh'"
+      - "used as 'acosh'"
     speech:
       en:
         - "short form 'arc cosh a1'"
@@ -1118,7 +1118,7 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - "used as 'atanh'"
+      - "used as 'atanh'"
     speech:
       en:
         - "short form American 'arc tanch a1'"
@@ -1130,7 +1130,7 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - "used as 'asech'"
+      - "used as 'asech'"
     speech:
       en:
         - "short form American 'arc sech a1'"
@@ -1142,7 +1142,7 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - "used as 'acsch'"
+      - "used as 'acsch'"
     speech:
       en:
         - "short form American 'arc cosech a1'"
@@ -1155,7 +1155,7 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - "used as 'acoth'"
+      - "used as 'acoth'"
     speech:
       en:
         - "short form American 'arc coth a1'"
@@ -1210,7 +1210,7 @@ concepts:
     speech:
       en: "mean of a1"
     comments:
-    - "This might be display as <math><mover><mi>x</mi><mo>&#xAF;</mo></mover></math>"
+      - "This might be display as <math><mover><mi>x</mi><mo>&#xAF;</mo></mover></math>"
   
   - concept: standard-deviation
     subject-area: Statistics and Probability
@@ -1254,23 +1254,23 @@ concepts:
     speech:
       en: "probability of a1 given a2"
     comments:
-    - |
-              The intent should be on the `mrow` that includes the "P"
-    
-               ```
-               <math>
-                <mrow intent='conditional-probability($arg1, $arg2)'>
-                 <mi>P</mi>
-                 <mo>(</mo>
-                 <mrow>
-                  <mi arg='arg1'>A</mi>
-                   <mo>|</mo>
-                   <mi arg='arg2'>B</mi>
-                 </mrow>
-                 <mo>)</mo>
-                </mrow>
-               </math>
-               ```
+      - |
+                The intent should be on the `mrow` that includes the "P"
+      
+                 ```
+                 <math>
+                  <mrow intent='conditional-probability($arg1, $arg2)'>
+                   <mi>P</mi>
+                   <mo>(</mo>
+                   <mrow>
+                    <mi arg='arg1'>A</mi>
+                     <mo>|</mo>
+                     <mi arg='arg2'>B</mi>
+                   </mrow>
+                   <mo>)</mo>
+                  </mrow>
+                 </math>
+                 ```
   
   ## ====================== 4.4.9 Linear Algebra ======================
   - concept: vector
@@ -1285,7 +1285,7 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
+      - when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
   
   - concept: determinant
     subject-area: Linear Algebra
@@ -1293,7 +1293,7 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
+      - when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
   
   - concept: adjugate
     subject-area: Linear Algebra
@@ -1301,7 +1301,7 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - "sometimes used when computing an inverse matrix"
+      - "sometimes used when computing an inverse matrix"
   
   - concept: magnitude
     subject-area: Linear Algebra
@@ -1309,7 +1309,7 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - "often used with matchfix single or double vertical bars"
+      - "often used with matchfix single or double vertical bars"
   
   - concept: norm
     subject-area: Linear Algebra
@@ -1317,7 +1317,7 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - "often used with matchfix double vertical bars"
+      - "often used with matchfix double vertical bars"
   
   - concept: span
     subject-area: Linear Algebra
@@ -1325,7 +1325,7 @@ concepts:
     arguments: [a1]
     property: function
     comments:
-    - "often used with matchfix angle brackets"
+      - "often used with matchfix angle brackets"
   
   - concept: unit-vector
     subject-area: Linear Algebra
@@ -1333,7 +1333,7 @@ concepts:
     arguments: [a1]
     property: prefix
     comments:
-    - "Example: <math><mover><mi>x</mi><mo>^</mo></mover></math>"
+      - "Example: <math><mover><mi>x</mi><mo>^</mo></mover></math>"
     speech:
       en: "unit vector x"
   
@@ -1342,7 +1342,7 @@ concepts:
     arity: 0
     arguments: []
     comments:
-    - "This is typically represented as 'I' or bold-faced '𝐈'"
+      - "This is typically represented as 'I' or bold-faced '𝐈'"
     speech:
       en: "identity matrix"
   
@@ -1374,8 +1374,8 @@ concepts:
     speech:
       en: "a1 by a2 ..."
     comments:
-    - "This is typically used with the `×` operator and can be placed on that character as a 0-arity concept name.
-              A common use would be describe the size of a matrix. For example <math><mi>m</mi><mo>×</mo><mi>n</mi></math>."
+      - "This is typically used with the `×` operator and can be placed on that character as a 0-arity concept name.
+        A common use would be describe the size of a matrix. For example <math><mi>m</mi><mo>×</mo><mi>n</mi></math>."
   
   
   ## ====================== 4.4.10 Constants and Sets ======================
@@ -1466,7 +1466,7 @@ concepts:
       en: "golden ratio"
       fr: "d"
     comments:
-    - "Often denoted as φ"
+      - "Often denoted as φ"
   
   
   
@@ -1481,7 +1481,7 @@ concepts:
       en:
         - "line segment a1 a2"
     comments:
-    - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>_</mo></mover></math>"
+      - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>_</mo></mover></math>"
   
   - concept: directed-line-segment
     subject-area: Geometry
@@ -1492,7 +1492,7 @@ concepts:
       en:
         - "directed line segment a1 a2"
     comments:
-    - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
+      - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
   
   - concept: line
     subject-area: Geometry
@@ -1503,7 +1503,7 @@ concepts:
       en:
         - "line a1 a2"
     comments:
-    - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>↔</mo></mover></math>"
+      - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>↔</mo></mover></math>"
   
   - concept: ray
     subject-area: Geometry
@@ -1514,7 +1514,7 @@ concepts:
       en:
         - "ray a1 a2"
     comments:
-    - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
+      - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
   
   - concept: arc
     subject-area: Geometry
@@ -1525,7 +1525,7 @@ concepts:
       en:
         - "arc a1 a2"
     comments:
-    - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>⌒</mo></mover></math>"
+      - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>⌒</mo></mover></math>"
   
   - concept: length
     subject-area: Geometry
@@ -1536,19 +1536,19 @@ concepts:
       en:
         - "length of a1"
     comments:
-    - "It may be necessary to 'nest' the intent as shown here for the example:
-      <math><mrow intent='length(line-segment($start, $end))'>
-             <mi arg='start' mathvariant='normal'>A</mi>
-             <mi arg='end' mathvariant='normal'>B</mi>
-          </mrow></math>"
-    - "The markup for this is:"
-    - |
-      ```
-      <mrow intent='length(line-segment($start, $end))'>
-             <mi arg='start' mathvariant='normal'>A</mi>
-             <mi arg='end' mathvariant='normal'>B</mi>
-      </mrow>
-      ```
+      - "It may be necessary to 'nest' the intent as shown here for the example:
+        <math><mrow intent='length(line-segment($start, $end))'>
+               <mi arg='start' mathvariant='normal'>A</mi>
+               <mi arg='end' mathvariant='normal'>B</mi>
+            </mrow></math>"
+      - "The markup for this is:"
+      - |
+        ```
+        <mrow intent='length(line-segment($start, $end))'>
+               <mi arg='start' mathvariant='normal'>A</mi>
+               <mi arg='end' mathvariant='normal'>B</mi>
+        </mrow>
+        ```
   
   - concept: area
     subject-area: Geometry
@@ -1559,23 +1559,24 @@ concepts:
       en:
         - "area of a1"
     comments:
-    - "There are many notations. Here's one: 
-        <math><mrow intent='area($a,$b,$c,$d)'><mo>[</mo><mi arg='a' mathvariant='normal'>A</mi><mi arg='b' mathvariant='normal'>B</mi><mi arg='c' mathvariant='normal'>C</mi><mi arg='d'  mathvariant='normal'>D</mi><mo>]</mo></mrow></math>"
-    - "The markup for this is:"
-    - |
-      ```
-      <mrow intent='area($shape)'>
-          <mo>[</mo>
-          <mrow arg='shape'>
-              <mi mathvariant='normal'>A</mi>
-              <mi mathvariant='normal'>B</mi>
-              <mi mathvariant='normal'>C</mi>
-              <mi mathvariant='normal'>D</mi>
-              <mo>]</mo>
-          </mrow>
-      </mrow>
-      ```
-    - "It may be necessary to 'nest' the intent as shown in the `length` intent"
+      - "There are many notations. Here's one: 
+          <math><mrow intent='area($a,$b,$c,$d)'><mo>[</mo><mi arg='a' mathvariant='normal'>A</mi><mi arg='b' mathvariant='normal'>B</mi><mi arg='c' mathvariant='normal'>C</mi><mi arg='d'  mathvariant='normal'>D</mi><mo>]</mo></mrow></math>"
+      - "The markup for this is:"
+      - |
+        ```
+        <mrow intent='area($shape)'>
+            <mo>[</mo>
+            <mrow arg='shape'>
+                <mi mathvariant='normal'>A</mi>
+                <mi mathvariant='normal'>B</mi>
+                <mi mathvariant='normal'>C</mi>
+                <mi mathvariant='normal'>D</mi>
+                <mo>]</mo>
+            </mrow>
+        </mrow>
+        ```
+      - "It may be necessary to 'nest' the intent as shown in the `length` intent"
+
   - concept: point
     subject-area: Geometry
     arity: ">=1"
@@ -1596,7 +1597,7 @@ concepts:
       en:
         - "volume of a1"
     comments:
-    - "See comments for `length` and `volume` for examples of how this might be marked up"
+      - "See comments for `length` and `volume` for examples of how this might be marked up"
   
   - concept: blank
     subject-area: Fill in the blank
@@ -1606,12 +1607,12 @@ concepts:
       en:
         - "blank"
     comments:
-    - "blanks can be represented in many ways in MathML. Some examples:"
-    - "`<mi intent='blank'>__</mi>`"
-    - "`<mi intent='blank'>?</mi>`"
-    - "`<mo intent='blank'>□</mo>`"
-    - "`<mspace intent='blank' width='3em'/>`"
-    - "`<menclose intent='blank' notation='box'>`<br/> `<mspace width='3em'/>`<br/> `</menclose>`"
+      - "blanks can be represented in many ways in MathML. Some examples:"
+      - "`<mi intent='blank'>__</mi>`"
+      - "`<mi intent='blank'>?</mi>`"
+      - "`<mo intent='blank'>□</mo>`"
+      - "`<mspace intent='blank' width='3em'/>`"
+      - "`<menclose intent='blank' notation='box'>`<br/> `<mspace width='3em'/>`<br/> `</menclose>`"
   
   - concept: time-separator
     subject-area: Separators
@@ -1621,8 +1622,8 @@ concepts:
     speech:
       en: a1 a2
     comments:
-    - "separates hours and minutes and is typically silent"
-    - "Example: 2:31"
+      - "separates hours and minutes and is typically silent"
+      - "Example: 2:31"
   
   
   - concept: fenced-group
@@ -1633,7 +1634,7 @@ concepts:
     speech:
       en: "fenced-group of a1"
     comments:
-    - "this includes parens, brackets, and braces"
+      - "this includes parens, brackets, and braces"
   
   - concept: ordered-pair
     subject-area: General Concepts
@@ -1651,7 +1652,7 @@ concepts:
     speech:
       en: "a1 indexed by a2"
     comments:
-    - "this is typically a subscript and might also be spoken as 'a1 sub a2'"
+      - "this is typically a subscript and might also be spoken as 'a1 sub a2'"
   
   - concept: highlight
     subject-area: General Concepts
@@ -1661,8 +1662,8 @@ concepts:
     speech:
       en: "a1 highlighted"
     comments:
-    - "this typically would be used inside of a larger expression and not on its own"
-    - "this might be used with `<menclose notation='box'>` or similar. It might also be used with color changes, although may be done with CSS"
+      - "this typically would be used inside of a larger expression and not on its own"
+      - "this might be used with `<menclose notation='box'>` or similar. It might also be used with color changes, although may be done with CSS"
   
   
   - concept: rate
@@ -1673,8 +1674,8 @@ concepts:
     speech:
       en: "a1 per a2"
     comments:
-    - "Typically used with units"
-    - "Used with `mfrac` or `/`"
+      - "Typically used with units"
+      - "Used with `mfrac` or `/`"
   
   - concept: translation
     subject-area: General Concepts
@@ -1684,7 +1685,7 @@ concepts:
     speech:
       en: "translation by a1 comma a2"
     comments:
-    - "Example: <math><msub><mi>T</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>)</mo></mrow></msub></math>"
+      - "Example: <math><msub><mi>T</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>)</mo></mrow></msub></math>"
     
   - concept: constraint
     subject-area: General Concepts
@@ -1694,7 +1695,7 @@ concepts:
     speech:
       en: "fraction 2 over x minus 1 with constraint x not equal to 1"
     comments:
-    - "Example: <math><mfrac><mn>2</mn><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>,</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#x2260;</mo><mn>1</mn></math>"
+      - "Example: <math><mfrac><mn>2</mn><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>,</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#x2260;</mo><mn>1</mn></math>"
     
   - concept: binomial-coefficient
     subject-area: General Concepts
@@ -1704,30 +1705,30 @@ concepts:
     speech:
       en: "a1 choose a2"
     comments:
-    - "There are many notations used for the binomial coefficient. Here are some of them: 
-      <math><mrow intent='binomial-coefficent($power, $term)'>
-        <mo>(</mo>
-        <mfrac linethickness='0'>
-            <mi arg='power'>n</mi>
+      - "There are many notations used for the binomial coefficient. Here are some of them: 
+        <math><mrow intent='binomial-coefficent($power, $term)'>
+          <mo>(</mo>
+          <mfrac linethickness='0'>
+              <mi arg='power'>n</mi>
+              <mi arg='term'>k</mi>
+          </mfrac>
+          <mo>)</mo>
+        </mrow></math>, 
+        <math>
+          <msubsup intent='binomial-coefficent($power, $term>)'>
+            <mi>C</mi>
             <mi arg='term'>k</mi>
-        </mfrac>
-        <mo>)</mo>
-      </mrow></math>, 
-      <math>
-        <msubsup intent='binomial-coefficent($power, $term>)'>
-          <mi>C</mi>
-          <mi arg='term'>k</mi>
-          <mi arg='power'>n</mi>
-        </msubsup>
-      </math>, 
-      <math>
-        <mmultiscripts intent='binomial-coefficent($power, $term)'>
-          <mi>C</mi>
-          <mi arg='term'>k</mi> <none/>
-          <mprescripts/>
-          <mi arg='power'>n</mi> <none/>
-        </mmultiscripts>
-      </math>"
+            <mi arg='power'>n</mi>
+          </msubsup>
+        </math>, 
+        <math>
+          <mmultiscripts intent='binomial-coefficent($power, $term)'>
+            <mi>C</mi>
+            <mi arg='term'>k</mi> <none/>
+            <mprescripts/>
+            <mi arg='power'>n</mi> <none/>
+          </mmultiscripts>
+        </math>"
   
   - concept: pochhammer
     subject-area: General Concepts
@@ -1737,29 +1738,29 @@ concepts:
     speech:
       en: "a2 permutation of a1"
     comments:
-    - "There are many notations for this: some of them are 
-        <math>
-          <msubsup><mi>P</mi><mi>k</mi><mi>n</mi></msubsup>
-          <mo>,</mo><mo>&#xA0;</mo>
-          <mmultiscripts><mi>P</mi><mi>k</mi><none/><mprescripts/><mi>n</mi><none/></mmultiscripts>
-          <mo>,</mo><mo>&#xA0;</mo>
-          <mmultiscripts><mi>P</mi><mi>k</mi><none/><mprescripts/><none/><mi>n</mi></mmultiscripts>
-          <mo>,</mo><mo>&#xA0;</mo>
-          <msub><mi>P</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub>
-          <mo>,</mo><mo>&#xA0;</mo>
-          <mi>P</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>k</mi><mo>)
-          </mo><mo>,</mo><mo>&#xA0;</mo>
-          <msup><mi>n</mi><menclose notation='bottom'><mi>k</mi></menclose></msup>
-      </math>"
-    - "The first of these would be marked up as:"
-    - |
-      ```
-      <msubsup intent='pochhammer($n, $k)'>
-          <mi>P</mi>
-          <mi arg='k'>k</mi>
-          <mi arg='n'>n</mi>
-      </msubsup>
-      ```
+      - "There are many notations for this: some of them are 
+          <math>
+            <msubsup><mi>P</mi><mi>k</mi><mi>n</mi></msubsup>
+            <mo>,</mo><mo>&#xA0;</mo>
+            <mmultiscripts><mi>P</mi><mi>k</mi><none/><mprescripts/><mi>n</mi><none/></mmultiscripts>
+            <mo>,</mo><mo>&#xA0;</mo>
+            <mmultiscripts><mi>P</mi><mi>k</mi><none/><mprescripts/><none/><mi>n</mi></mmultiscripts>
+            <mo>,</mo><mo>&#xA0;</mo>
+            <msub><mi>P</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub>
+            <mo>,</mo><mo>&#xA0;</mo>
+            <mi>P</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>k</mi><mo>)
+            </mo><mo>,</mo><mo>&#xA0;</mo>
+            <msup><mi>n</mi><menclose notation='bottom'><mi>k</mi></menclose></msup>
+        </math>"
+      - "The first of these would be marked up as:"
+      - |
+        ```
+        <msubsup intent='pochhammer($n, $k)'>
+            <mi>P</mi>
+            <mi arg='k'>k</mi>
+            <mi arg='n'>n</mi>
+        </msubsup>
+        ```
   
   - concept: permutation-cycle
     subject-area: General Concepts
@@ -1769,21 +1770,21 @@ concepts:
     speech:
       en: "permutation cycle of a1 a2 ..."
     comments:
-    - "A common notation for a permutation cycle is <math><mo>(</mo>
-            <mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable>
-            <mo>)</mo></math>"
-    - "This would be marked up as:"
-    - |
-      ```
-      <mrow intent='permutation-cycle($arg1, $arg2, $arg3)'
-      <mo>(</mo>
-        <mtable><mtr>
-           <mtd><mn arg='arg1'>1</mn></mtd>
-           <mtd><mn arg='arg2'>3</mn></mtd>
-           <mtd><mn arg='arg3'>2</mn></mtd>
-        </mtr></mtable>
-      <mo>)</mo>
-      ```
+      - "A common notation for a permutation cycle is <math><mo>(</mo>
+              <mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable>
+              <mo>)</mo></math>"
+      - "This would be marked up as:"
+      - |
+        ```
+        <mrow intent='permutation-cycle($arg1, $arg2, $arg3)'
+        <mo>(</mo>
+          <mtable><mtr>
+             <mtd><mn arg='arg1'>1</mn></mtd>
+             <mtd><mn arg='arg2'>3</mn></mtd>
+             <mtd><mn arg='arg3'>2</mn></mtd>
+          </mtr></mtable>
+        <mo>)</mo>
+        ```
   
   - concept: embellished-name
     subject-area: General Concepts
@@ -1793,7 +1794,7 @@ concepts:
     speech:
       en: "a1 with annotation a2"
     comments:
-    - "used with `mover` or `munder`"
+      - "used with `mover` or `munder`"
    
      
   - concept: fenced-group
@@ -1804,7 +1805,7 @@ concepts:
     speech:
       en: "fenced-group of a1"
     comments:
-    - "this includes parens, brackets, and braces"
+      - "this includes parens, brackets, and braces"
   
   - concept: annotation
     subject-area: Grouping
@@ -1814,8 +1815,8 @@ concepts:
     speech:
       en: "a1 which is a2"
     comments:
-    - "used with `mover` or `munder`"
-    - "Example: <math><munder><munder><mrow><msub><mi mathvariant='normal'>H</mi><mn>2</mn></msub><mi mathvariant='normal'>O</mi></mrow><mo>&#x23DF;</mo></munder><mtext>water</mtext></munder></math>"
+      - "used with `mover` or `munder`"
+      - "Example: <math><munder><munder><mrow><msub><mi mathvariant='normal'>H</mi><mn>2</mn></msub><mi mathvariant='normal'>O</mi></mrow><mo>&#x23DF;</mo></munder><mtext>water</mtext></munder></math>"
   
   - concept: braced-group
     subject-area: Grouping
@@ -1825,8 +1826,8 @@ concepts:
     speech:
       en: "grouped a1 end-grouped"
     comments:
-    - "used with `mover` or `munder`"
-    - "Example: <math><munder><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>-</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><mo>&#x23DF;</mo></munder></math>"
+      - "used with `mover` or `munder`"
+      - "Example: <math><munder><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>-</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><mo>&#x23DF;</mo></munder></math>"
   
   - concept: repeating-decimal
     subject-area: Grouping
@@ -1836,23 +1837,23 @@ concepts:
     speech:
       en: "repeating decimal a1"
     comments:
-    - "typically used in when there is a bar over the repeating part of a decimal or dots over the first and last digits."
-    - "Example: <math><mfrac><mn>1</mn><mn>22</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>0</mn><mover><mn>45</mn><mo>_</mo></mover></math>"
-    - "This right hand side of this might be might be marked up as:"
-    - |
-      ```
-      <mn>0.0</mn>
-      <mover intent='repeating-decimal($repeat)'>
-          <mn arg='repeat'>45</mn>
-          <mo>_</mo>
-      </mover>
-      ```
-    - "or using the elementary math elements in MathML full as"
-    - |
-      ```
-      <mstack intent='_(0.0, repeating-decimal(45)'>
-        <msline length="2"/>
-        <mn>0.045</mn>
-      </mstack>
-      ```
+      - "typically used in when there is a bar over the repeating part of a decimal or dots over the first and last digits."
+      - "Example: <math><mfrac><mn>1</mn><mn>22</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>0</mn><mover><mn>45</mn><mo>_</mo></mover></math>"
+      - "This right hand side of this might be might be marked up as:"
+      - |
+        ```
+        <mn>0.0</mn>
+        <mover intent='repeating-decimal($repeat)'>
+            <mn arg='repeat'>45</mn>
+            <mo>_</mo>
+        </mover>
+        ```
+      - "or using the elementary math elements in MathML full as"
+      - |
+        ```
+        <mstack intent='_(0.0, repeating-decimal(45)'>
+          <msline length="2"/>
+          <mn>0.045</mn>
+        </mstack>
+        ```
 
