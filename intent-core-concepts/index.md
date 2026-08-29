@@ -200,7 +200,13 @@ if c.link
 {%- for cond in c.conditions -%}
 <tr {% if forloop.first %}id="{{c.concept}}{{arityu}}{{propertyu}}"{% endif %} class="row{{ clss }}">
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}"><a class="self" href="#{{c.concept}}{{arityu}}{{propertyu}}">{{c.concept}}</a></td>{%- endif -%}
-{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{arityr}}</td>{%- endif -%}
+{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{arityr}}<br/>
+[
+{%- for arg in c.arguments -%}
+{{arg}}
+{%- unless forloop.last -%},{% endunless -%}
+{%- endfor -%}
+]</td>{%- endif -%}
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- unless c.default == false or c.arity == 0 -%}*{%- endunless -%}</td>{%- endif -%}
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
