@@ -35,6 +35,7 @@ span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body table {font-size:85%}
 .markdown-body table tr.row0, .markdown-body table th.row0 {background-color:#F6F8FA}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
+.markdown-body table tr.subj {background-color:beige;font-size:110%;text-align:left;}
 a.link {font-weight:500}
 a.self {color: black; font-weight:500}
      [arg] { background-color: #ddfafa;}
@@ -123,9 +124,8 @@ Additional contributions are welcome:
 </p>
 </details>
 
-{%- for section in site.data.open.concepts -%}
-
-### {{section.title}}
+{% assign cpts = site.data.open.concepts | sort: "subject-area" %}
+{% assign subjt = "" %}
 
 <table style="width:100%">
 <thead>
@@ -137,12 +137,15 @@ Additional contributions are welcome:
 <th class="{{language.language-code}}">Speech Template ({{language.language-code}})</th> 
 {%- endfor -%}
 <th style="width:auto">Comments</th>
-<th>Subject</th>
 <th>Sources</th>
 </tr>
 </thead>
 <tbody>
-{%- for c in section.intents -%}
+{%- for c in cpts -%}
+{%- if c.subject-area != subjt -%}
+{%- assign subjt = c.subject-area -%}
+<tr class="subj"><th colspan="3">{{subjt}}</th></tr>
+{%- endif -%}
 {%- assign clss = forloop.index| modulo:2 -%}
 {%- assign arityr = c.arity | replace: ">=", "⩾" -%}
 {%- assign arityu = c.arity | replace: ">=", "GEQ" -%}
@@ -183,7 +186,6 @@ Additional contributions are welcome:
 Aliases: {% for al in c.alias -%}{{al}}{%- unless forloop.last -%}<br>{% endunless -%}{%- endfor -%}
 {%-endif -%}
 </td>{%- endif -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{{c.area}}</td>{%-endif -%}
 {%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">
 {%- if c.urls -%}
 {% for u in c.urls %}
@@ -244,7 +246,6 @@ arXiv
 Aliases: {% for al in c.alias -%}{{al}}{%- unless forloop.last -%}, {% endunless -%}{%- endfor -%}
 {%-endif -%}
 </td>
-<td>{{c.area}}</td>
 <td>
 {%- if c.urls -%}
 {% for u in c.urls %}
@@ -276,7 +277,7 @@ arXiv
 </tbody>
 </table>
 <hr>
-{%- endfor -%}
+
 
 ### Key
 
