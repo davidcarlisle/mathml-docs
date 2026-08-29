@@ -217,7 +217,7 @@ concepts:
   - concept: closed-open-interval
     subject-area: functions and inverses
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en: interval between a1 (included) and a2
@@ -226,7 +226,7 @@ concepts:
   - concept: open-closed-interval
     subject-area: functions and inverses
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en:  interval between a1 and a2, included
@@ -235,7 +235,7 @@ concepts:
   - concept: open-interval
     subject-area: functions and inverses
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en: open interval between a1 and a2
@@ -244,7 +244,7 @@ concepts:
   - concept: closed-interval
     subject-area: functions and inverses
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en: closed interval between a1 and a2
@@ -298,7 +298,7 @@ concepts:
   - concept: fraction
     subject-area: functions and inverses
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en: fraction a1 over a2 end fraction
@@ -306,7 +306,7 @@ concepts:
   - concept: mixed-fraction
     subject-area: functions and inverses
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en: a1 and a2
@@ -317,7 +317,7 @@ concepts:
   - concept: quotient
     subject-area: functions and inverses
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en: integer part of a1 divided by a2
@@ -326,7 +326,7 @@ concepts:
   - concept: evaluated-at
     subject-area: functions and inverses
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: infix
     speech:
       en: a1 evaluated-at a2
@@ -347,7 +347,7 @@ concepts:
   - concept: remainder
     subject-area: functions and inverses
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en: the remainder of a1 divided by a2
@@ -372,7 +372,7 @@ concepts:
   - concept: power
     subject-area: functions and inverses
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: infix
     conditions:
       - condition: "a2=2"
@@ -392,7 +392,7 @@ concepts:
   - concept: root
     subject-area: functions and inverses
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     conditions:
       - condition: "a2=2"
@@ -411,7 +411,7 @@ concepts:
   - concept: greatest-common-divisor
     subject-area: functions and inverses
     arity: ">=2"
-    arguments: [a1,a2,...]
+    arguments: [a1, a2,...]
     property: function
     speech:
       en: greatest common divisor of a1, a2, ...
@@ -420,7 +420,7 @@ concepts:
   - concept: least-common-multiple
     subject-area: functions and inverses
     arity: ">=2"
-    arguments: [a1,a2,...]
+    arguments: [a1, a2,...]
     property: function
     speech:
       en: lest common multiple of  a1, a2, ...
@@ -429,7 +429,7 @@ concepts:
   - concept: least-common-denominator
     subject-area: functions and inverses
     arity: ">=2"
-    arguments: [a1,a2,...]
+    arguments: [a1, a2,...]
     property: function
     speech:
       en: "least common denominator of a1, a2, ..."
@@ -482,7 +482,7 @@ concepts:
   - concept: polar-coordinate
     subject-area: functions and inverses
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en: "polar coordinate a1 comma a2"
@@ -493,7 +493,7 @@ concepts:
   - concept: spherical-coordinate
     subject-area: functions and inverses
     arity: 3
-    arguments: [a1,a2,a3]
+    arguments: [a1, a2, a3]
     property: function
     speech:
       en: "spherical coordinate a1 comma a2, comma a3"
@@ -504,7 +504,7 @@ concepts:
   - concept: cartesian-coordinate
     subject-area: functions and inverses
     arity: ">=2"
-    arguments: [a1,a2,...]
+    arguments: [a1, a2,...]
     property: function
     speech:
       en: "cartesian coordinate a1 comma a2 ..."
@@ -514,7 +514,7 @@ concepts:
   - concept: coordinate
     subject-area: functions and inverses
     arity: ">=2"
-    arguments: [a1,a2,...]
+    arguments: [a1, a2,...]
     property: function
     speech:
       en: "coordinate a1 comma a2 ..."
@@ -573,7 +573,7 @@ concepts:
   - concept: definite-integral
     subject-area: calculus
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: ???
     speech:
       en: "integral from a1 to a2"
@@ -584,7 +584,7 @@ concepts:
   - concept: derivative
     subject-area: calculus
     arity: 3
-    arguments: [a1,a2,a3]
+    arguments: [a1, a2, a3]
     property: ???
     speech:
       en:
@@ -617,7 +617,7 @@ concepts:
   - concept: partial-derivative
     subject-area: calculus
     arity: ">=3"
-    arguments: [a1,a2,a3,...]
+    arguments: [a1, a2, a3,...]
     property: ???
     speech:
       en:
@@ -672,7 +672,7 @@ concepts:
   - concept: tends-to
     subject-area: calculus
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: infix
     speech:
       en: "a1 tends to a2"
@@ -682,7 +682,7 @@ concepts:
   - concept: tends-to-from-above
     subject-area: calculus
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: infix
     speech:
       en: "a1 tends to from above a2"
@@ -692,7 +692,7 @@ concepts:
   - concept: tends-to-from-below
     subject-area: calculus
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: infix
     speech:
       en: "a1 tends to from below a2"
@@ -732,7 +732,7 @@ concepts:
   - concept: set-difference
     subject-area: sets
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en: "set difference of a1 and a2"
@@ -744,7 +744,7 @@ concepts:
   - concept: set-difference
     subject-area: sets
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: infix
     speech:
       en: "\"a1 minus a2\" or \"a2 subtracted from a1\""
@@ -810,7 +810,7 @@ concepts:
   - concept: sum
     subject-area: sequences and series
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en: "sum over a1 of a2"
@@ -820,7 +820,7 @@ concepts:
   - concept: sum
     subject-area: sequences and series
     arity: 3
-    arguments: [a1,a2,a3]
+    arguments: [a1, a2, a3]
     property: function
     speech:
       en: "sum from a1 to a2 of a3"
@@ -840,7 +840,7 @@ concepts:
   - concept: product
     subject-area: sequences and series
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en: "product over a1 of a2"
@@ -850,7 +850,7 @@ concepts:
   - concept: product
     subject-area: sequences and series
     arity: 3
-    arguments: [a1,a2,a3]
+    arguments: [a1, a2, a3]
     property: function
     speech:
       en: "product from a1 to a2 of a3"
@@ -1193,7 +1193,7 @@ concepts:
   - concept: logarithm
     subject-area: elementary classical functions
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en: "log base a2 of a1"
@@ -1249,7 +1249,7 @@ concepts:
   - concept: conditional-probability
     subject-area: Statistics and Probability
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en: "probability of a1 given a2"
@@ -1368,7 +1368,7 @@ concepts:
   - concept: dimensional-product
     subject-area: Linear Algebra
     arity: ">=2"
-    arguments: [a1,a2,...]
+    arguments: [a1, a2,...]
     property: infix
     default: false
     speech:
@@ -1475,7 +1475,7 @@ concepts:
   - concept: line-segment
     subject-area: Geometry
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: prefix
     speech:
       en:
@@ -1486,7 +1486,7 @@ concepts:
   - concept: directed-line-segment
     subject-area: Geometry
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: prefix
     speech:
       en:
@@ -1497,7 +1497,7 @@ concepts:
   - concept: line
     subject-area: Geometry
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: prefix
     speech:
       en:
@@ -1508,7 +1508,7 @@ concepts:
   - concept: ray
     subject-area: Geometry
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: prefix
     speech:
       en:
@@ -1519,7 +1519,7 @@ concepts:
   - concept: arc
     subject-area: Geometry
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: prefix
     speech:
       en:
@@ -1616,7 +1616,7 @@ concepts:
   - concept: time-separator
     subject-area: Separators
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: infix
     speech:
       en: a1 a2
@@ -1638,7 +1638,7 @@ concepts:
   - concept: ordered-pair
     subject-area: General Concepts
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en: "the pair a1 and a2"
@@ -1646,7 +1646,7 @@ concepts:
   - concept: indexed-by
     subject-area: General Concepts
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: infix
     speech:
       en: "a1 indexed by a2"
@@ -1668,7 +1668,7 @@ concepts:
   - concept: rate
     subject-area: General Concepts
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: infix
     speech:
       en: "a1 per a2"
@@ -1679,7 +1679,7 @@ concepts:
   - concept: translation
     subject-area: General Concepts
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en: "translation by a1 comma a2"
@@ -1689,7 +1689,7 @@ concepts:
   - concept: constraint
     subject-area: General Concepts
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: infix
     speech:
       en: "fraction 2 over x minus 1 with constraint x not equal to 1"
@@ -1699,7 +1699,7 @@ concepts:
   - concept: binomial-coefficient
     subject-area: General Concepts
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: infix
     speech:
       en: "a1 choose a2"
@@ -1732,7 +1732,7 @@ concepts:
   - concept: pochhammer
     subject-area: General Concepts
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en: "a2 permutation of a1"
@@ -1764,7 +1764,7 @@ concepts:
   - concept: permutation-cycle
     subject-area: General Concepts
     arity: ">=2"
-    arguments: [a1,a2,...]
+    arguments: [a1, a2,...]
     property: function
     speech:
       en: "permutation cycle of a1 a2 ..."
@@ -1788,7 +1788,7 @@ concepts:
   - concept: embellished-name
     subject-area: General Concepts
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: infix
     speech:
       en: "a1 with annotation a2"
@@ -1809,7 +1809,7 @@ concepts:
   - concept: annotation
     subject-area: Grouping
     arity: 2
-    arguments: [a1,a2]
+    arguments: [a1, a2]
     property: function
     speech:
       en: "a1 which is a2"
