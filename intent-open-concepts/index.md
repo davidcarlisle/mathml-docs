@@ -144,7 +144,13 @@ Additional contributions are welcome:
 {%- for c in cpts -%}
 {%- if c.subject-area != subjt -%}
 {%- assign subjt = c.subject-area -%}
-<tr class="subj"><th colspan="3">{{subjt}}</th></tr>
+<tr class="subj"><th colspan="3">
+{%- if c.subject-area == null -%}
+00 Unclassified
+{%- else -%}
+{{subjt}}
+{%- endif -%}
+</th></tr>
 {%- endif -%}
 {%- assign clss = forloop.index| modulo:2 -%}
 {%- assign arityr = c.arity | replace: ">=", "⩾" -%}
