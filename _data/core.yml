@@ -6,208 +6,208 @@
 
 
 defaultfixity:
-   - fixity: function
-     concepts:
-       - concept: curl
-         characters: [∇]
-       - concept: divergence
-         characters: [∇]
-       - concept: gradient
-         characters: [∇]
-       - concept: laplacian
-         characters: [∆]
+  - fixity: function
+    concepts:
+      - concept: curl
+        characters: [∇]
+      - concept: divergence
+        characters: [∇]
+      - concept: gradient
+        characters: [∇]
+      - concept: laplacian
+        characters: [∆]
 
-   - fixity: prefix
-     concepts:
-       - concept: angle
-         characters: [∠]
-       - concept: angle-measure
-         characters: [∡]
-       - concept: change
-         characters: ["Δ"]
-       - concept: for-all
-         characters: [∀]
-       - concept: measured-angle
-         characters: [∡]
-       - concept: minus
-         characters: ["-", "−"]
-       - concept: not
-         characters: [¬]
-       - concept: number-of
-         characters: ["#"]
-       - concept: partial-derivative
-         characters: [∂]
-       - concept: right-angle
-         characters: [∟]
-       - concept: square-root-of
-         characters: [√]
-       - concept: there-does-not-exist
-         characters: [∄]
-       - concept: there-exists
-         characters: [∃]
+  - fixity: prefix
+    concepts:
+      - concept: angle
+        characters: [∠]
+      - concept: angle-measure
+        characters: [∡]
+      - concept: change
+        characters: ["Δ"]
+      - concept: for-all
+        characters: [∀]
+      - concept: measured-angle
+        characters: [∡]
+      - concept: minus
+        characters: ["-", "−"]
+      - concept: not
+        characters: [¬]
+      - concept: number-of
+        characters: ["#"]
+      - concept: partial-derivative
+        characters: [∂]
+      - concept: right-angle
+        characters: [∟]
+      - concept: square-root-of
+        characters: [√]
+      - concept: there-does-not-exist
+        characters: [∄]
+      - concept: there-exists
+        characters: [∃]
 
-   - fixity: infix
-     concepts:
-       - concept: and
-         characters: [⁤∧]
-       - concept: applied-to
-         characters: [⁡U+2061]
-       - concept: approximately
-         characters: [≈]
-       - concept: congruent
-         characters: [≅]
-       - concept: cartesian-product
-         characters: [×]
-       - concept: composed-with
-         characters: [∘]
-       - concept: cross-product
-         characters: [×]
-       - concept: defined-as
-         characters: ["≝", "=", "≔"]
-       - concept: dimensional-product
-         characters: [×]
-         link: dimensional-product*infix
-       - concept: divided-by
-         characters: [/, ÷, ":"]
-       - concept: divides
-         characters: ["|", "∣"]
-       - concept: does-not-belong-to
-         characters: [∉]
-       - concept: does-not-divide
-         characters: [∤]
-       - concept: dot-product
-         characters: ["·"]
-       - concept: downwards-diagonal-ellipsis
-         characters: ["⋱"]
-       - concept: direct-product
-         characters: [×]
-       - concept: element-of
-         characters: [∈, ∊]
-       - concept: ellipsis
-         characters: ["…", "⋯"]
-       - concept: equals
-         characters: ["="]
-       - concept: equivalent-to
-         characters: [≡]
-       - concept: evaluates-to
-         characters: ["→"]
-       - concept: given
-         characters: ["|"]
-       - concept: greater-than
-         characters: ["&gt;"]
-       - concept: greater-than-or-equal-to
-         characters: [≥, ≧]
-       - concept: identically-equals
-         characters: [≡]
-       - concept: if-and-only-if
-         characters: ["⟺"]
-       - concept: implies
-         characters: [⇒]
-       - concept: inner-product
-         characters: [⋅]
-       - concept: intersection
-         characters: [∩]
-       - concept: less-than
-         characters: ["&lt;"]
-       - concept: less-than-or-equal-to
-         characters: [≤, ≦]
-       - concept: list-separator
-         characters: [",", ";"]
-       - concept: maps-to
-         characters: ["→"]
-       - concept: member-of
-         characters: [∈, ∊]
-       - concept: minus
-         characters: ["-", "−"]
-       - concept: minus-or-plus
-         characters: [∓]
-       - concept: not-subset
-         characters: [⊄]
-       - concept: not-superset
-         characters: [⊅]
-       - concept: not-equal-to
-         characters: [≠]
-       - concept: not-member-of
-         characters: [∉]
-       - concept: not-parallel-to
-         characters: [∦]
-       - concept: obtained-from
-         characters: [←]
-       - concept: or
-         characters: [∨]
-       - concept: outer-product
-         characters: [⊗]
-       - concept: parallel-to
-         characters: [∥]
-       - concept: perpendicular
-         characters: ["⟂"]
-       - concept: plus
-         characters: [+, U+2064]
-       - concept: plus-or-minus
-         characters: [±]
-       - concept: precedes
-         characters: [≺]
-       - concept: proportional
-         characters: [∝, ∷, ∼, ~]
-       - concept: range-separator
-         characters: ["-", "‐", "‑", "–", "—"]
-       - concept: ratio
-         characters: [":", "∶"]
-       - concept: set-difference
-         characters: ["∼", "~", "-", "−", "\\"]
-       - concept: similar
-         characters: [≅]
-       - concept: subset
-         characters: [⊂]
-       - concept: subset-or-equal
-         characters: [⊆]
-       - concept: succeeds
-         characters: [≻]
-       - concept: such-that
-         characters: [":", "|"]
-       - concept: superset
-         characters: [⊃]
-       - concept: superset-or-equal
-         characters: [⊇]
-       - concept: tilde
-         characters: [~]
-       - concept: times
-         characters: ["*", "·", "×", "∗"]
-       - concept: union
-         characters: [∪]
-       - concept: upwards-diagonal-ellipsis
-         characters: ["⋰"]
-       - concept: vertical-ellipsis
-         characters: ["⋮"]
-       - concept: xor
-         characters: [⊕]
+  - fixity: infix
+    concepts:
+      - concept: and
+        characters: [⁤∧]
+      - concept: applied-to
+        characters: [⁡U+2061]
+      - concept: approximately
+        characters: [≈]
+      - concept: congruent
+        characters: [≅]
+      - concept: cartesian-product
+        characters: [×]
+      - concept: composed-with
+        characters: [∘]
+      - concept: cross-product
+        characters: [×]
+      - concept: defined-as
+        characters: ["≝", "=", "≔"]
+      - concept: dimensional-product
+        characters: [×]
+        link: dimensional-product*infix
+      - concept: divided-by
+        characters: [/, ÷, ":"]
+      - concept: divides
+        characters: ["|", "∣"]
+      - concept: does-not-belong-to
+        characters: [∉]
+      - concept: does-not-divide
+        characters: [∤]
+      - concept: dot-product
+        characters: ["·"]
+      - concept: downwards-diagonal-ellipsis
+        characters: ["⋱"]
+      - concept: direct-product
+        characters: [×]
+      - concept: element-of
+        characters: [∈, ∊]
+      - concept: ellipsis
+        characters: ["…", "⋯"]
+      - concept: equals
+        characters: ["="]
+      - concept: equivalent-to
+        characters: [≡]
+      - concept: evaluates-to
+        characters: ["→"]
+      - concept: given
+        characters: ["|"]
+      - concept: greater-than
+        characters: ["&gt;"]
+      - concept: greater-than-or-equal-to
+        characters: [≥, ≧]
+      - concept: identically-equals
+        characters: [≡]
+      - concept: if-and-only-if
+        characters: ["⟺"]
+      - concept: implies
+        characters: [⇒]
+      - concept: inner-product
+        characters: [⋅]
+      - concept: intersection
+        characters: [∩]
+      - concept: less-than
+        characters: ["&lt;"]
+      - concept: less-than-or-equal-to
+        characters: [≤, ≦]
+      - concept: list-separator
+        characters: [",", ";"]
+      - concept: maps-to
+        characters: ["→"]
+      - concept: member-of
+        characters: [∈, ∊]
+      - concept: minus
+        characters: ["-", "−"]
+      - concept: minus-or-plus
+        characters: [∓]
+      - concept: not-subset
+        characters: [⊄]
+      - concept: not-superset
+        characters: [⊅]
+      - concept: not-equal-to
+        characters: [≠]
+      - concept: not-member-of
+        characters: [∉]
+      - concept: not-parallel-to
+        characters: [∦]
+      - concept: obtained-from
+        characters: [←]
+      - concept: or
+        characters: [∨]
+      - concept: outer-product
+        characters: [⊗]
+      - concept: parallel-to
+        characters: [∥]
+      - concept: perpendicular
+        characters: ["⟂"]
+      - concept: plus
+        characters: [+, U+2064]
+      - concept: plus-or-minus
+        characters: [±]
+      - concept: precedes
+        characters: [≺]
+      - concept: proportional
+        characters: [∝, ∷, ∼, ~]
+      - concept: range-separator
+        characters: ["-", "‐", "‑", "–", "—"]
+      - concept: ratio
+        characters: [":", "∶"]
+      - concept: set-difference
+        characters: ["∼", "~", "-", "−", "\\"]
+      - concept: similar
+        characters: [≅]
+      - concept: subset
+        characters: [⊂]
+      - concept: subset-or-equal
+        characters: [⊆]
+      - concept: succeeds
+        characters: [≻]
+      - concept: such-that
+        characters: [":", "|"]
+      - concept: superset
+        characters: [⊃]
+      - concept: superset-or-equal
+        characters: [⊇]
+      - concept: tilde
+        characters: [~]
+      - concept: times
+        characters: ["*", "·", "×", "∗"]
+      - concept: union
+        characters: [∪]
+      - concept: upwards-diagonal-ellipsis
+        characters: ["⋰"]
+      - concept: vertical-ellipsis
+        characters: ["⋮"]
+      - concept: xor
+        characters: [⊕]
 
-   - fixity: postfix
-     concepts:
-       - concept: factorial
-         characters: ["!"]
-       - concept: percent
-         characters: ["%"]
+  - fixity: postfix
+    concepts:
+      - concept: factorial
+        characters: ["!"]
+      - concept: percent
+        characters: ["%"]
 
-   - fixity: nofix
-     concepts:
-       - concept: diameter
-         characters: ["d"]
-       - concept: distance
-         characters: ["d", "D"]
-       - concept: probability
-         characters: ["P"]
-       - concept: radius
-         characters: ["r"]
-       - concept: volume
-         characters: ["V"]
+  - fixity: nofix
+    concepts:
+      - concept: diameter
+        characters: ["d"]
+      - concept: distance
+        characters: ["d", "D"]
+      - concept: probability
+        characters: ["P"]
+      - concept: radius
+        characters: ["r"]
+      - concept: volume
+        characters: ["V"]
 
-   - fixity: silent
-     concepts:
-       - concept: invisible-separator
-         characters: [⁣U+2063]
-       - concept: invisible-times
-         characters: [⁢U+2062]
+  - fixity: silent
+    concepts:
+      - concept: invisible-separator
+        characters: [⁣U+2063]
+      - concept: invisible-times
+        characters: [⁢U+2062]
 
 
 concepts:
