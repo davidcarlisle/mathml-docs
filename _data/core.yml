@@ -356,7 +356,7 @@ concepts:
   - concept: max
     subject-area: functions and inverses
     arity: ">=1"
-    arguments: [a1,...]
+    arguments: [a1, ...]
     property: function
     speech:
       en: "max of a1, ..."
@@ -364,7 +364,7 @@ concepts:
   - concept: min
     subject-area: functions and inverses
     arity: ">=1"
-    arguments: [a1,...]
+    arguments: [a1, ...]
     property: function
     speech:
       en: "min of a1, ..."
@@ -411,7 +411,7 @@ concepts:
   - concept: greatest-common-divisor
     subject-area: functions and inverses
     arity: ">=2"
-    arguments: [a1, a2,...]
+    arguments: [a1, a2, ...]
     property: function
     speech:
       en: greatest common divisor of a1, a2, ...
@@ -420,7 +420,7 @@ concepts:
   - concept: least-common-multiple
     subject-area: functions and inverses
     arity: ">=2"
-    arguments: [a1, a2,...]
+    arguments: [a1, a2, ...]
     property: function
     speech:
       en: lest common multiple of  a1, a2, ...
@@ -429,7 +429,7 @@ concepts:
   - concept: least-common-denominator
     subject-area: functions and inverses
     arity: ">=2"
-    arguments: [a1, a2,...]
+    arguments: [a1, a2, ...]
     property: function
     speech:
       en: "least common denominator of a1, a2, ..."
@@ -504,7 +504,7 @@ concepts:
   - concept: cartesian-coordinate
     subject-area: functions and inverses
     arity: ">=2"
-    arguments: [a1, a2,...]
+    arguments: [a1, a2, ...]
     property: function
     speech:
       en: "cartesian coordinate a1 comma a2 ..."
@@ -514,7 +514,7 @@ concepts:
   - concept: coordinate
     subject-area: functions and inverses
     arity: ">=2"
-    arguments: [a1, a2,...]
+    arguments: [a1, a2, ...]
     property: function
     speech:
       en: "coordinate a1 comma a2 ..."
@@ -617,7 +617,7 @@ concepts:
   - concept: partial-derivative
     subject-area: calculus
     arity: ">=3"
-    arguments: [a1, a2, a3,...]
+    arguments: [a1, a2, a3, ...]
     property: ???
     speech:
       en:
@@ -785,14 +785,14 @@ concepts:
   - concept: list
     subject-area: sets
     arity: ">=0"
-    arguments: [a1,...]
+    arguments: [a1, ...]
     speech:
       en: "list of a1, ..."
   
   - concept: tuple
     subject-area: sets
     arity: ">=0"
-    arguments: [a1,...]
+    arguments: [a1, ...]
     speech:
       en: "tuple of a1, ..."
   
@@ -1368,7 +1368,7 @@ concepts:
   - concept: dimensional-product
     subject-area: Linear Algebra
     arity: ">=2"
-    arguments: [a1, a2,...]
+    arguments: [a1, a2, ...]
     property: infix
     default: false
     speech:
@@ -1579,7 +1579,7 @@ concepts:
   - concept: point
     subject-area: Geometry
     arity: ">=1"
-    arguments: [a1,...]
+    arguments: [a1, ...]
     property: ???
     speech:
       en:
@@ -1764,7 +1764,7 @@ concepts:
   - concept: permutation-cycle
     subject-area: General Concepts
     arity: ">=2"
-    arguments: [a1, a2,...]
+    arguments: [a1, a2, ...]
     property: function
     speech:
       en: "permutation cycle of a1 a2 ..."
