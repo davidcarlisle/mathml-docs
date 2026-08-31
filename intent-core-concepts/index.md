@@ -32,6 +32,7 @@ title: Core Concept List
 p.langs {margin:1em; padding:1em;background-color: #EEE}
 tr:target >td:first-child {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}
+span.nw {white-space:nowrap}
 .markdown-body table tr.row0, .markdown-body table th.row0 {background-color:#F6F8FA}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
 .markdown-body table tr.subj {background-color:beige;font-size:110%;text-align:left;}
@@ -201,12 +202,12 @@ if c.link
 <tr {% if forloop.first %}id="{{c.concept}}{{arityu}}{{propertyu}}"{% endif %} class="row{{ clss }}">
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}"><a class="self" href="#{{c.concept}}{{arityu}}{{propertyu}}">{{c.concept}}</a></td>{%- endif -%}
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{arityr}}<br/>
-[
+<span class="nw">[
 {%- for arg in c.arguments -%}
 {{arg}}
 {%- unless forloop.last -%},{% endunless -%}
 {%- endfor -%}
-]</td>{%- endif -%}
+]</span></td>{%- endif -%}
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- unless c.default == false or c.arity == 0 -%}*{%- endunless -%}</td>{%- endif -%}
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
@@ -241,12 +242,12 @@ if c.link
 <td><a class="self" href="#{{c.concept}}{{arityu}}{{propertyu}}">{{c.concept}}</a></td>
 <td>
 {{arityr}}<br/>
-[
+<span class="nw">[
 {%- for arg in c.arguments -%}
 {{arg}}
 {%- unless forloop.last -%},{% endunless -%}
 {%- endfor -%}
-]
+]</span>
 </td>
 <td>{{c.property}}{%- unless c.default == false or c.arity == 0-%}*{%- endunless -%}</td>
 {%- for language in site.data.languages -%}
